@@ -1,2 +1,2 @@
-# lincolngirlswhocode.com
-The Lincoln Girls Who Code website
+# Website
+The Lincoln Girls in Tech website
