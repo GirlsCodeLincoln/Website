@@ -1,0 +1,11 @@
+[Settings]
+ID = "lincolngirlsintech.com"
+
+[build]
+  base = "src/"
+  publish = "src/"
+
+[[redirects]]
+  from = "https://lincolngirlswhocode.com"
+  to = "https://lincolngirlsintech.com"
+  status = 301
