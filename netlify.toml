@@ -1,5 +1,5 @@
 [Settings]
-ID = "lincolngirlsintech.com"
+ID = "girlscodelincoln.com"
 
 [build]
   base = "src/"
@@ -7,5 +7,9 @@ ID = "lincolngirlsintech.com"
 
 [[redirects]]
   from = "https://lincolngirlswhocode.com"
-  to = "https://lincolngirlsintech.com"
+  to = "https://girlscodelincoln.com"
+  status = 301
+[[redirects]]
+  from = "https://lincolngirlsintech.com"
+  to = "https://girlscodelincoln.com"
   status = 301
