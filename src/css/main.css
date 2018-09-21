@@ -25,20 +25,25 @@ html {
 
 body {
     color: var(--text-color);
-    font-family: arial;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     font-size: 17px;
     margin: 0;
     padding: 0;
 }
 
 h1 {
+    font-family: 'Work Sans', sans-serif;
     color: var(--primary);
     font-size: 1.3rem;
+    font-weight: 600;
 }
 
 h2 {
+    font-family: 'Work Sans', sans-serif;
     color: var(--primary);
     font-size: 1.1rem;
+    font-weight: 600;
 }
 
 a, a:link {
