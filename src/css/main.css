@@ -137,18 +137,23 @@ main {
 }
 
 main section {
-    padding: 3rem 1rem;
     /*Grid*/
-    grid-column: standardwidth;
+    grid-column: fullwidth;
+    padding: 3rem calc((100% - var(--main-width)) / 2);
 }
 
 main section.fullwidth {
     /*Grid*/
     grid-column: fullwidth;
+    padding: 3rem 1rem;
 }
 
 main section.purple {
     background-color: var(--purple);
+}
+
+main section.pink {
+    background-color: var(--pink);
 }
 
 main section.girlscode {
