@@ -33,7 +33,6 @@ body {
 }
 
 h1 {
-    /* font-family: 'Work Sans', sans-serif; */
     font-family: 'Quicksand', sans-serif;
     color: var(--primary);
     font-size: 1.3rem;
@@ -41,7 +40,6 @@ h1 {
 }
 
 h2 {
-    /* font-family: 'Work Sans', sans-serif; */
     font-family: 'Quicksand', sans-serif;
     color: var(--primary);
     font-size: 1.1rem;
