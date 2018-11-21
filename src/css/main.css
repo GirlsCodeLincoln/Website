@@ -25,7 +25,7 @@ html {
 
 body {
     color: var(--text-color);
-    font-family: 'Lato', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     font-size: 17px;
     margin: 0;
@@ -33,17 +33,17 @@ body {
 }
 
 h1 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: var(--primary);
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h2 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: var(--primary);
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 a, a:link {
