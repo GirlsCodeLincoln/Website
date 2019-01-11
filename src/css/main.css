@@ -40,3 +40,7 @@ main section.girlscode img {
 #description, #calendar-full {
     padding: 3rem calc((100% - 40em) / 2);
 }
+
+#sponsors .sponsor-img {
+    height: 256px;
+}
