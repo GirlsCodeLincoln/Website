@@ -1,17 +1,3 @@
-/*
- * TODO: Fix IE11 support. Needs -ms prefixes, only supports
- */
-
-:root {
-    --blue: #0A4BED;
-    --pink: #D895CA;
-    --purple: #401FD6;
-    --text-color: #111;
-    --link-color: var(--purple);
-    --background: #EEF1F6;
-    --main-width: 40em;
-}
-
 html {
     font-size: 1em;
     line-height: 1.5;
@@ -19,141 +5,12 @@ html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
-} 
-
 body {
-    color: var(--text-color);
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
-    font-size: 17px;
-    margin: 0;
-    padding: 0;
+    font-family: 'Quicksand', sans-serif !important;
 }
 
-h1 {
-    font-family: 'Quicksand', sans-serif;
-    color: var(--primary);
-    font-size: 1.3rem;
-    font-weight: 700;
-}
-
-h2 {
-    font-family: 'Quicksand', sans-serif;
-    color: var(--primary);
-    font-size: 1.1rem;
-    font-weight: 700;
-}
-
-a, a:link {
-    color: var(--link-color)
-}
-
-.hidden {
-    display: none !important;
-}
-
-.container {
-    height: 100vh;
-    width: 100%;
-    /*Grid*/
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: min-content 1fr min-content;
-    grid-template-rows: min-content 1fr min-content;
-    grid-template-areas:
-        "nav"
-        "main"
-        "footer";
-    grid-gap: 0;
-}
-
-nav a, a:link, a:hover, a:visited
-{
-    color: #fff;
-    text-decoration: none;
-    padding: 1rem;
-    display: block;
-}
-nav a:hover
-{
-    color: #fff;
-    background-color: var(--pink);
-}
-
-nav {
-    background: var(--blue);
-    color: #fff;    
-    width: 100%;
-    padding: 0 1rem;
-    line-height: 1;
-    /*Grid*/
-    grid-area: nav;
-    -ms-grid-row: 1;
-    /*Flex*/
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav a:link, a:hover, a:visited {
-    color: #fff;
-}
-
-nav>ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    /*Flex*/
-    display: flex;
-}
-
-nav>ul>li {
-    text-align: center;
-}
-
-nav img {
-    margin: 1rem;
-}
-
-main {
-    background: var(--background);
-    color: var(--text-color);    
-    padding: 0;
-    /*Layout Grid*/
-    -ms-grid-row: 2;
-    grid-area: main;  
-    /*Content Grid*/
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-template-columns: minmax(.5em, 1fr) minmax(0, var(--main-width)) minmax(.5em, 1fr);
-    grid-template-columns:
-        [fullwidth-start] minmax(.5em, 1fr) 
-        [standardwidth-start] minmax(0, var(--main-width)) [standardwidth-end]
-        minmax(.5em, 1fr) [fullwidth-end];
-    grid-auto-rows: min-content;
-    grid-gap: 0;
-}
-
-main section {
-    /*Grid*/
-    grid-column: fullwidth;
-    padding: 3rem calc((100% - var(--main-width)) / 2);
-}
-
-main section.fullwidth {
-    /*Grid*/
-    grid-column: fullwidth;
-    padding: 3rem 1rem;
-}
-
-main section.purple {
-    background-color: var(--purple);
-}
-
-main section.pink {
-    background-color: var(--pink);
+p {
+    margin-bottom: 0 !important;
 }
 
 main section.girlscode {
@@ -161,8 +18,6 @@ main section.girlscode {
     background-size: cover;
     text-align: center;
     padding: 6rem 2rem;
-    /*Grid*/
-    grid-column: fullwidth;
 }
 
 main section.girlscode img {
@@ -170,41 +25,18 @@ main section.girlscode img {
     max-width: 400px;
 }
 
-main section.girlscode h2 {
-    color: #fff;
+.bg-blue {
+    background-color: #0A4BED;
 }
 
-footer {
-    background: var(--blue);
-    color: #fff;
-    text-align: center;
-    width: 100%;
-    line-height: .6;
-    font-size: .8em;
-    padding: .5rem;
-    /*Grid*/
-    -ms-grid-row: 3;
-    grid-area: footer;
+.bg-pink {
+    background-color: #D895CA;
 }
 
-@media only screen and (max-width: 600px)
-{
-    nav {
-        padding: 0;
-        /*Flex*/
-        flex-direction: column;
-        width: 100%;
-    }
-    nav>ul {
-        /*Flex*/
-        flex-direction: column;
-        width: 100%;
-    }
+.bg-grey {
+    background-color: #EEF1F6;
+}
 
-    main section {
-        padding: 2rem 1rem;
-    }
-    main section.girlscode {
-        padding: 2rem 1rem;
-    }
+#description, #calendar-full {
+    padding: 3rem calc((100% - 40em) / 2);
 }

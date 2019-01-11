@@ -1,0 +1,18 @@
+{
+  "name": "gcl-website",
+  "version": "1.0.0",
+  "description": "Website for 501(c)(3), Girls Code Lincoln",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "http-server ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GirlsCodeLincoln/Website.git"
+  },
+  "author": "Girls Code Lincoln",
+  "license": "UNLICENSED"
+}

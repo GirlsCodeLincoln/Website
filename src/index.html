@@ -1,57 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Girls Code Lincoln</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="img/site.webmanifest">
-    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="img/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Girls Code Lincoln</title>
 
-    <link rel="stylesheet" href="css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/site.webmanifest">
+  <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="img/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
 
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  </head>
-  <body>
-    
-    <div class="container">
-      <nav>
+  <link rel="stylesheet" href="css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg row bg-blue navbar-dark">
+      <div class="navbar-brand">
         <img src="img/girlscodelincoln-nav.png" alt="Girls Code Lincoln" style="height: 30px;" />
-        <ul>
-          <li><a href="#">Home</a></li>
-          <!--<li><a href="#">Contact</a></li>-->
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
         </ul>
-      </nav>
+      </div>
+    </nav>
 
-      <main>
-        <section class="girlscode fullwidth">
-            <img src="img/girlscodelincoln.png" alt="Girls Code Lincoln" />
-            <!--<h1 style="color: var(--blue); font-weight: 700; font-size: 3em;">girls code <span style="font-weight: 400;"><span style="text-decoration: underline">li</span>ncoln</span></h1>-->
-            <h2>Teaching girls about technology through creativity, community, collaboration, and confidence.</h2>
-        </section>
+    <main class="row">
+      <section class="girlscode fullwidth col-12">
+        <img src="img/girlscodelincoln.png" alt="Girls Code Lincoln" />
+        <h5 class="text-light h5 font-weight-bold my-4">Teaching girls about technology through creativity, community,
+          collaboration, and confidence.</h2>
+      </section>
 
-        <section>
-          Girls Code Lincoln was established in January 2016 as Lincoln Girls Who Code. We host technology clubs in Lincoln for 4th - 9th grade girls. Since inception we have held over 15 clubs and impacted over 200 girls.
-        </section>
+      <section class="col-12 justify-content-center bg-grey">
+        <p id="description" class="text-sm-center mx-auto">
+          Girls Code Lincoln was established in January 2016 as Lincoln Girls Who Code. We host technology clubs
+          in Lincoln for 4th - 9th grade girls. Since inception we have held over 15 clubs and impacted over 200
+          girls.
+        </p>
+      </section>
 
-        <section class="pink" id="calendar-full">
-          <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=eh2akbgitkihie7k4svqg256u8%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=America%2FChicago" style="border-width:0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
-        </section>
-      </main>
+      <section class="bg-pink col-12" id="calendar-full">
+        <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=eh2akbgitkihie7k4svqg256u8%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=America%2FChicago"
+          style="border-width:0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+      </section>
+    </main>
 
-      <footer>        
+    <footer class="row py-3 bg-blue">
+      <div class="col-12 text-light text-sm-center">
         <p>Lincoln, NE</p>
         <p>info@girlscodelincoln.com</p>
-      </footer>
-    </div>
-    
-  </body>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
 </html>
