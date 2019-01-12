@@ -59,3 +59,9 @@ main section.girlscode img {
         transform: none;
     }
 }
+
+@media screen and (max-width: 400px) {
+    #sponsors-partners .logo {
+        max-width: 90vw;
+    }
+}
