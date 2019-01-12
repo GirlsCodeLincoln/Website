@@ -42,5 +42,20 @@ main section.girlscode img {
 }
 
 #sponsors .sponsor-img {
-    height: 256px;
+    max-width: 400px;
+    height: auto;
+    transition: all 0.3s ease;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#sponsors .sponsor-img:hover {
+    transform: scale(1.04);
+}
+
+/* remove hover rule for sponsor images if hover is not supported on device */
+@media (hover:none) {
+    #sponsors .sponsor-img:hover {
+        transform: none;
+    }
 }
