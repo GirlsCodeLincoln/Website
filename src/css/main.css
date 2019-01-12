@@ -37,11 +37,11 @@ main section.girlscode img {
     background-color: #EEF1F6;
 }
 
-#description, #calendar-full {
+#description, #calendar {
     padding: 3rem calc((100% - 40em) / 2);
 }
 
-#sponsors .sponsor-img {
+#sponsors-partners .logo {
     max-width: 400px;
     height: auto;
     transition: all 0.3s ease;
@@ -49,13 +49,13 @@ main section.girlscode img {
     padding-bottom: 1rem;
 }
 
-#sponsors .sponsor-img:hover {
+#sponsors-partners .logo:hover {
     transform: scale(1.04);
 }
 
 /* remove hover rule for sponsor images if hover is not supported on device */
 @media (hover:none) {
-    #sponsors .sponsor-img:hover {
+    #sponsors-partners .logo:hover {
         transform: none;
     }
 }
