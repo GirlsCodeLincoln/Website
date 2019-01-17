@@ -13,6 +13,10 @@ p {
     margin-bottom: 0 !important;
 }
 
+a {
+    color: #0A4BED;
+}
+
 main section.girlscode {
     background: url("../img/background.jpg") no-repeat center center;
     background-size: cover;
@@ -37,8 +41,42 @@ main section.girlscode img {
     background-color: #EEF1F6;
 }
 
-#description, #calendar {
-    padding: 3rem calc((100% - 40em) / 2);
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+ul.timeline::before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+ul.timeline > li::before {
+    content: ' ';
+    background: #EEF1F6;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #0A4BED;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+#description {
+    /* padding: 3rem calc((100% - 40em) / 2); */
 }
 
 #sponsors-partners .logo {
@@ -49,11 +87,16 @@ main section.girlscode img {
     padding-bottom: 1rem;
 }
 
+#left-brace {
+    height: 100%;
+}
+
 #sponsors-partners .logo:hover {
     transform: scale(1.04);
 }
 
 /* remove hover rule for sponsor images if hover is not supported on device */
+
 @media (hover:none) {
     #sponsors-partners .logo:hover {
         transform: none;
