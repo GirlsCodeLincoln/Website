@@ -30,14 +30,15 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
 
-  <script src="./js/index.js"></script>
+  <script src="/js/parallax.min.js"></script>
+  <script src="/js/index.js"></script>
 </head>
 
 <body>
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg row bg-blue navbar-dark">
       <div class="navbar-brand">
-        <img src="img/girlscodelincoln-nav.png" alt="Girls Code Lincoln" style="height: 30px;" />
+        <img src="/img/girlscodelincoln-nav.png" alt="Girls Code Lincoln" style="height: 30px;" />
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -56,8 +57,8 @@
     </nav>
 
     <main class="row">
-      <section class="girlscode fullwidth col-12">
-        <img src="img/girlscodelincoln.png" alt="Girls Code Lincoln" />
+      <section class="girlscode fullwidth col-12" data-parallax="scroll" data-image-src="./img/background.jpg">
+        <img src="/img/girlscodelincoln.png" alt="Girls Code Lincoln" />
         <h5 class="text-light h5 font-weight-bold my-4">Teaching girls about technology through creativity, community,
           collaboration, and confidence.</h2>
       </section>
@@ -78,7 +79,7 @@
       <section id="sponsors-partners" class="bg-grey col-12 py-5">
         <h2 class="display3 text-center mb-5">A huge thank you to our sponsors and partners</h3>
           <h3 class="display4 text-center mb-4">Sponsors</h4>
-            <div class="col-8 d-flex flex-wrap justify-content-center mx-auto mb-5 align-items-center">
+            <div class="col-10 d-flex flex-wrap justify-content-center mx-auto mb-5 align-items-center">
               <a href="http://mentorsfound.com" target="_blank" rel="noopener">
                 <img class="px-3 logo" src="img/sponsors/mentors.png" alt="Mentors Found">
               </a>
@@ -90,7 +91,7 @@
               </a>
             </div>
             <h3 class="display4 text-center mb-4">Partners</h3>
-            <div class="col-8 d-flex flex-wrap justify-content-center mx-auto align-items-center">
+            <div class="col-10 d-flex flex-wrap justify-content-center mx-auto align-items-center">
               <a href="http://www.launchleadership.org" target="_blank" rel="noopener">
                 <img class="px-3 logo" src="img/partners/launch.png" alt="Launch Leadership">
               </a>

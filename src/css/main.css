@@ -14,8 +14,6 @@ p {
 }
 
 main section.girlscode {
-    background: url("../img/background.jpg") no-repeat center center;
-    background-size: cover;
     text-align: center;
     padding: 6rem 2rem;
 }
@@ -42,7 +40,7 @@ main section.girlscode img {
 }
 
 #sponsors-partners .logo {
-    max-width: 400px;
+    max-width: 300px;
     height: auto;
     transition: all 0.3s ease;
     padding-top: 1rem;
@@ -60,7 +58,7 @@ main section.girlscode img {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 300px) {
     #sponsors-partners .logo {
         max-width: 90vw;
     }
