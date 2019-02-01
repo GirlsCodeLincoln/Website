@@ -37,6 +37,10 @@ main section.girlscode img {
     background-color: #EEF1F6;
 }
 
+#test-section {
+    background-color: green;
+}
+
 #description, #calendar {
     padding: 3rem calc((100% - 40em) / 2);
 }
