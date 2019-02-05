@@ -17,6 +17,10 @@ a {
   color: #0A4BED;
 }
 
+.navbar-brand img {
+    height: 30px;
+}
+
 main section.girlscode {
   text-align: center;
   padding: 8rem 2rem;
@@ -24,7 +28,7 @@ main section.girlscode {
 
 main section.girlscode img {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 hr.hr {
