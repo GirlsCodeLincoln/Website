@@ -75,6 +75,21 @@ ul.timeline>li::before {
   z-index: 400;
 }
 
+ul.timeline>li.previous-club {
+  display: none;
+}
+
+.timeline-show-more {
+  cursor: pointer;
+  color: #0A4BED;
+}
+
+.timeline-show-less {
+  cursor: pointer;
+  display: none;
+  color: #0A4BED;
+}
+
 #sponsors-partners .logo {
   max-width: 400px;
   height: auto;

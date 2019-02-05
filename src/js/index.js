@@ -16,8 +16,20 @@
     });
   }
 
+  /**
+   * Shows and hides previous clubs when clicked
+   */
+  function assignTimelineShowMoreHandler() {
+    $('.timeline-show-more, .timeline-show-less').on('click', function (e) {
+      $('ul.timeline>li.previous-club').slideToggle();
+      $('.timeline-show-more').toggle();
+      $('.timeline-show-less').toggle();
+    });
+  }
+
   $(function () {
     // Add handlers after document is ready
     assignNavLinkClickHandlers();
+    assignTimelineShowMoreHandler();
   });
 })();
