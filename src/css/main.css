@@ -35,6 +35,11 @@ main section.girlscode img {
   background-color: #D895CA;
 }
 
+/* GCL Pink darkened 15% */
+.bg-dark-pink {
+  background-color: #C35DAE;
+}
+
 .bg-grey {
   background-color: #EEF1F6;
 }
@@ -100,8 +105,16 @@ ul.timeline>li.previous-club {
   transform: scale(1.04);
 }
 
-/* remove hover rule for sponsor images if hover is not supported on device */
+#sponsor-info {
+  border: 1px solid #C35DAE; /* GCL Pink, darkened 15% */
+}
 
+#sponsor-info:hover,
+#sponsor-info:focus {
+  background-color: #D182C1; /* GCL Pink, darkened 5% */
+}
+
+/* remove hover rule for sponsor images if hover is not supported on device */
 @media (hover:none) {
   #sponsors-partners .logo:hover {
     transform: none;
