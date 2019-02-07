@@ -49,6 +49,10 @@ hr.hr {
   background-color: #EEF1F6;
 }
 
+#donate-button {
+  color: black;
+}
+
 ul.timeline {
   list-style-type: none;
   position: relative;
@@ -110,12 +114,13 @@ ul.timeline > li.previous-club {
   transform: scale(1.04);
 }
 
-#sponsor-info {
+.cta-btn {
+  background-color: #D895CA;
   border: 1px solid #C35DAE;
   /* GCL Pink, darkened 15% */
 }
 
-#sponsor-info:hover, #sponsor-info:focus {
+.cta-btn:hover, .cta-btn:focus {
   background-color: #D182C1;
   /* GCL Pink, darkened 5% */
 }
