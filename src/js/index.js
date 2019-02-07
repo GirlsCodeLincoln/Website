@@ -3,7 +3,7 @@
    * Assigns Nav bar links to smooth scroll to section based on hash and section id
    */
   function assignNavLinkClickHandlers() {
-    $('.nav').on('click', function (e) {
+    $('.navbar-nav .nav-link').on('click', function (e) {
       e.preventDefault(); // prevent jumping straight to section
 
       const target = this.hash;
