@@ -104,6 +104,16 @@ ul.timeline>li.previous-club {
   transform: scale(1.04);
 }
 
+#social-links i {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+#social-links i:hover {
+  color: #D895CA;
+  transform: scale(1.08);
+}
+
 /* remove hover rule for sponsor images if hover is not supported on device */
 
 @media (hover:none) {
