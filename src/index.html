@@ -38,10 +38,18 @@
 
 <body>
   <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg row bg-blue navbar-dark">
+    <nav class="navbar navbar-expand-md row bg-blue navbar-dark">
       <div class="navbar-brand">
         <img src="/assets/img/girlscodelincoln-nav.svg" alt="Girls Code Lincoln" />
       </div>
+      <!-- donate button to show on smaller screen widths - shows left of the navbar toggler -->
+      <a
+        id="donate-button"
+        class="nav-link font-weight-bold btn btn-sm cta-btn ml-auto mr-2 d-md-none"
+        href="https://www.gofundme.com/h9j5y-girls-code-lincoln/donate"
+        target="_blank" rel="noopener">
+          Donate
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -53,6 +61,16 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#sponsors-partners">Sponsors and Partners</a>
+          </li>
+          <!-- donate button to show on larger screen widths - shows right of all other nav links -->
+          <li class="nav-item d-none d-md-block">
+            <a
+              id="donate-button"
+              class="nav-link font-weight-bold btn cta-btn ml-lg-2"
+              href="https://www.gofundme.com/h9j5y-girls-code-lincoln/donate"
+              target="_blank" rel="noopener">
+                Donate
+            </a>
           </li>
         </ul>
       </div>
@@ -166,7 +184,7 @@
         </div>
         <div class="col-10 mx-auto"><hr class="hr"></div>
         <div class="mx-auto mt-5 d-flex justify-content-center align-items-center">
-          <a id="sponsor-info" class="btn bg-pink font-weight-bold" role="button"
+          <a class="btn cta-btn font-weight-bold" role="button"
             href="assets/pdf/GCL-Donation-Info.pdf" target="_blank" rel="noopener">
             Want to become a Sponsor or Partner?
           </a>

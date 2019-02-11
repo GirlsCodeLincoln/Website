@@ -4,6 +4,11 @@
    */
   function assignNavLinkClickHandlers() {
     $('.navbar-nav .nav-link').on('click', function (e) {
+      // Do not prevent default behavior if href is to an anchor/hash
+      if ($(this).attr('href').indexOf('#') === -1) {
+        return;
+      }
+
       e.preventDefault(); // prevent jumping straight to section
 
       const target = this.hash;
