@@ -50,8 +50,32 @@ hr.hr {
   background-color: #EEF1F6;
 }
 
+.bg-purple {
+  background-color: #7662ad;
+}
+
+.bg-indigo {
+  background-color: #2a29b4;
+}
+
 #donate-button {
   color: black;
+}
+
+.icon-foreground {
+  color: #EEF1F6;
+}
+
+.icon-background {
+  color: #7662ad;
+}
+
+.impact-figure {
+  color: #2a2a2a;
+}
+
+.impact-subtext {
+  color: #7662ad;
 }
 
 ul.timeline {
