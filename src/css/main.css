@@ -17,16 +17,25 @@ a {
   color: #0A4BED;
 }
 
+.navbar-brand img {
+  height: 30px;
+  max-width: 45vw;
+}
+
 main section.girlscode {
-  background: url("../img/background.jpg") no-repeat center center;
-  background-size: cover;
   text-align: center;
-  padding: 6rem 2rem;
+  padding: 8rem 2rem;
 }
 
 main section.girlscode img {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
+}
+
+hr.hr {
+  height: 6px;
+  background: url(/assets/img/slash.png) repeat-x 0 0;
+  border: 0;
 }
 
 .bg-blue {
@@ -39,6 +48,10 @@ main section.girlscode img {
 
 .bg-grey {
   background-color: #EEF1F6;
+}
+
+#donate-button {
+  color: black;
 }
 
 ul.timeline {
@@ -91,7 +104,7 @@ ul.timeline > li.previous-club {
 }
 
 #sponsors-partners .logo {
-  max-width: 400px;
+  max-width: 300px;
   height: auto;
   transition: all 0.3s ease;
   padding-top: 1rem;
@@ -102,6 +115,27 @@ ul.timeline > li.previous-club {
   transform: scale(1.04);
 }
 
+.cta-btn {
+  background-color: #D895CA;
+  border: 1px solid #C35DAE;
+  /* GCL Pink, darkened 15% */
+}
+
+.cta-btn:hover, .cta-btn:focus {
+  background-color: #D182C1;
+  /* GCL Pink, darkened 5% */
+}
+
+#social-links i {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+#social-links i:hover {
+  color: #D895CA;
+  transform: scale(1.08);
+}
+
 /* remove hover rule for sponsor images if hover is not supported on device */
 
 @media (hover:none) {
@@ -110,7 +144,7 @@ ul.timeline > li.previous-club {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 300px) {
   #sponsors-partners .logo {
     max-width: 90vw;
   }
