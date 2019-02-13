@@ -80,10 +80,6 @@ hr.hr {
   background-color: #2A29B4;
 }
 
-#donate-button {
-  color: black;
-}
-
 .icon-foreground {
   color: #EEF1F6;
 }
@@ -163,8 +159,11 @@ ul.timeline > li.previous-club {
   transform: scale(1.04);
 }
 
-.cta-btn {
+.cta-btn,
+/* increase specificity so text is not white lke other nav-items */
+.navbar .nav-item .cta-btn {
   background-color: #D895CA;
+  color: black;
 
   /* GCL Pink, darkened 15% */
   border: 1px solid #C35DAE;
