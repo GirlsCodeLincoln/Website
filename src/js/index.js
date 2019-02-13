@@ -26,7 +26,7 @@
    */
   function assignTimelineShowMoreHandler() {
     $('.timeline-show-more, .timeline-show-less').on('click', function (e) {
-      $('ul.timeline>li.previous-club').slideToggle();
+      $('ul.timeline > li.previous-club').slideToggle();
       $('.timeline-show-more').toggle();
       $('.timeline-show-less').toggle();
     });
