@@ -66,16 +66,17 @@ hr.hr {
   color: #EEF1F6;
 }
 
-.icon-background {
+.icon-background,
+.impact-subtext {
   color: #7662ad;
 }
 
 .impact-figure {
   font-size: 42px;
+  margin-bottom: 0;
 }
 
 .impact-subtext {
-  color: #7662ad;
   font-size: 18px;
 }
 
