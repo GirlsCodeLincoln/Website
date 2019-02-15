@@ -159,6 +159,11 @@ ul.timeline > li.previous-club {
   transform: scale(1.04);
 }
 
+#contact {
+  background: linear-gradient(45deg, #7662AD 0%, #2A29B4 100%);
+  height: 100vh;
+}
+
 .cta-btn,
 /* increase specificity so text is not white lke other nav-items */
 .navbar .nav-item .cta-btn {
