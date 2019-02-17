@@ -252,7 +252,14 @@
 
       <section id="contact" class="col-12 py-5">
         <h2 class="text-center mb-5 font-weight-bold text-white">Contact</h2>
-        <form role="form" id="contactForm" name="contact" data-netlify="true" method="POST" class="col-10 col-lg-6 mx-auto text-white">
+        <form
+          role="form"
+          name="contact"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          method="POST"
+          class="col-10 col-lg-6 mx-auto text-white"
+        >
           <div class="row">
             <p class="d-none">
               <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
