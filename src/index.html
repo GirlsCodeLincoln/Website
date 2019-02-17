@@ -56,7 +56,7 @@
         </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto align-items-md-center">
           <li class="nav-item">
             <a class="nav-link" href="#about-us">About Us</a>
           </li>
@@ -70,6 +70,9 @@
             <a class="nav-link" href="https://teespring.com/stores/girlscodelincoln" target="_blank" rel="noopener">
               Merchandise
             </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
           <!-- donate button to show on larger screen widths - shows right of all other nav links -->
           <li class="nav-item d-none d-md-block">
@@ -247,8 +250,29 @@
         </div>
       </section>
 
-      <section id="contact" class="col-12 py-5">
-        foo
+      <section id="contact" name="contact" data-netlify="true" class="col-12 py-5">
+        <h2 class="text-center mb-5 font-weight-bold text-white">Contact</h2>
+        <form role="form" id="contactForm" class="col-10 col-lg-6 mx-auto text-white">
+          <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+            </div>
+          </div>
+          <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+          </div>
+          <button type="submit" id="form-submit" class="btn cta-btn float-right">
+            <i class="fas fa-paper-plane text-dark mr-2"></i>
+            Submit
+          </button>
+          <div id="msgSubmit" class="h3 text-center d-none">Message Submitted!</div>
+        </form>
       </section>
     </main>
 
@@ -257,7 +281,6 @@
         <div class="my-4">
           <h5><i class="font-weight-bold">Connect With Us</i></h5>
           <div id="social-links" class=>
-            <!-- Email icon with mailto: link injected here in JS to prevent spam -->
             <a href="https://www.instagram.com/girlscodelincoln" target="_blank" rel="noopener" aria-label="Instagram">
               <i class="fab fa-instagram fa-2x mx-2" aria-hidden="true"></i>
             </a>
