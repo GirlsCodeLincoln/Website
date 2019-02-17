@@ -168,7 +168,7 @@ ul.timeline > li.previous-club {
 }
 
 .cta-btn,
-/* increase specificity so text is not white lke other nav-items */
+/* increase specificity so text is not white like other nav-items */
 .navbar .nav-item .cta-btn {
   background-color: #D895CA;
   color: black;
@@ -177,9 +177,14 @@ ul.timeline > li.previous-club {
   border: 1px solid #C35DAE;
 }
 
-.cta-btn:hover, .cta-btn:focus {
+.cta-btn:hover,
+.cta-btn:focus,
+/* Increase specificity so text is not grey like other nav-items */
+.navbar .nav-item .cta-btn:hover,
+.navbar .nav-item .cta-btn:focus {
   /* GCL Pink, darkened 5% */
   background-color: #D182C1;
+  color: black;
 }
 
 footer {
