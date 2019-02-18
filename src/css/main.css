@@ -191,13 +191,18 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+#social-links a {
+  text-decoration: none;
+}
+
 #social-links i {
-  color: white;
+  color: black;
   transition: all 0.3s ease;
 }
 
-#social-links i:hover {
-  color: #D895CA;
+#social-links i:hover,
+#social-links i:focus {
+  color: #0A4BED;
   transform: scale(1.08);
 }
 
