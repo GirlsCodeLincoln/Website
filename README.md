@@ -36,8 +36,9 @@ Available on:
 Hit CTRL-C to stop the server
 ```
 
-When you access one of these local hosts, the shell will output any local imports that are made and if they were successful
+When you access one of these local hosts, the shell will output any local imports that are made and if they were successful.
+The contact form submissions are done through Netlify, so submissions on localhost will not work. Refer to the website's [Netlify](https://app.netlify.com/sites/girlscodelincoln/settings/forms) to make changes to the contact form.
 
 ## Deployment
 
-When any changes are made to the master branch of the [repository](https://github.com/GirlsCodeLincoln/Website), the changes are automatically deployed to [girlscodelincoln.com](http://www.girlscodelincoln.com) via [Netlify](https://www.netlify.com/)
+When any changes are made to the master branch of the [repository](https://github.com/GirlsCodeLincoln/Website), the changes are automatically deployed to [girlscodelincoln.com](http://www.girlscodelincoln.com) via [Netlify](https://app.netlify.com/sites/girlscodelincoln/overview)

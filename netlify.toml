@@ -13,12 +13,3 @@ ID = "girlscodelincoln.com"
   from = "https://lincolngirlsintech.com"
   to = "https://girlscodelincoln.com"
   status = 301
-[[redirects]]
-  from = "https://girlscodelincoln.com/donate"
-  to = "https://www.gofundme.com/h9j5y-girls-code-lincoln/donate"
-  status = 301
-[[redirects]]
-  from = "https://merchandise.girlscodelincoln.com/"
-  to = "https://teespring.com/stores/girlscodelincoln"
-  status = 301
-
