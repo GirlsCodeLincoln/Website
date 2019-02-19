@@ -44,29 +44,40 @@
       </div>
       <!-- donate button to show on smaller screen widths - shows left of the navbar toggler -->
       <a
-        id="donate-button"
-        class="nav-link font-weight-bold btn btn-sm cta-btn ml-auto mr-2 d-md-none"
+        class="cta-btn nav-link font-weight-bold btn btn-sm ml-auto mr-2 d-md-none"
         href="https://www.gofundme.com/h9j5y-girls-code-lincoln/donate"
         target="_blank" rel="noopener">
           Donate
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon d-flex justify-content-center align-items-center">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto align-items-md-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#about-us">About Us</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#our-clubs">Our Clubs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#sponsors-partners">Sponsors and Partners</a>
+            <a class="nav-link" href="#sponsors-partners">Sponsors & Partners</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://teespring.com/stores/girlscodelincoln" target="_blank" rel="noopener">
+              Merchandise
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
           <!-- donate button to show on larger screen widths - shows right of all other nav links -->
           <li class="nav-item d-none d-md-block">
             <a
-              id="donate-button"
-              class="nav-link font-weight-bold btn cta-btn ml-lg-2"
+              class="cta-btn nav-link font-weight-bold btn ml-lg-2"
               href="https://www.gofundme.com/h9j5y-girls-code-lincoln/donate"
               target="_blank" rel="noopener">
                 Donate
@@ -83,46 +94,94 @@
           collaboration, and confidence.</h2>
       </section>
 
-      <section class="col-12 justify-content-center bg-grey">
-        <p id="description" class="text-center col-xs-8 col-md-6 col-lg-4 mx-auto my-5">
-          Girls Code Lincoln was established in January 2016 as Lincoln Girls Who Code. We host technology clubs
-          in Lincoln for 4th - 9th grade girls. Since inception we have held over 15 clubs and impacted over 200
-          girls.
-        </p>
+      <section id="about-us" class="col-12 justify-content-center bg-grey py-5">
+        <div class="col-xs-10 col-md-8 text-center mx-auto mb-5">
+          <h3 class="mb-3 font-weight-bold">
+            Girls Code Lincoln is a 501(c)(3) nonprofit organization. We strive to ignite passion for technology and leadership in young
+            girls with the long-term goal of closing the gender gap in S.T.E.M.
+          </h3>
+          <i>
+            We host multiweek technology clubs for 4th-9th grade girls. All clubs are completely free and 100% volunteer-run.
+            <br>
+            We partner with Nebraska organizations and build in-house curriculum to teach technology, leadership, and life skills.
+          </i>
+        </div>
+        <h3 class="text-center mb-4">Our Impact</h3>
+        <div class="col-9 d-flex flex-row justify-content-between align-items-start mx-auto flex-wrap">
+          <div class="col-xs-6 col-sm-2 d-flex flex-column align-items-center text-center">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x icon-background"></i>
+              <i class="fas fa-laptop-code fa-stack-1x icon-foreground"></i>
+            </span>
+            <h3 class="impact-figure font-weight-bold">15+</h3>
+            <h5 class="impact-subtext">Multiweek Tech & Leadership Clubs Ran</h5>
+          </div>
+          <div class="col-xs-6 col-sm-2 d-flex flex-column align-items-center text-center mt-3 mt-sm-0">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x icon-background"></i>
+              <i class="fas fa-female fa-stack-1x icon-foreground"></i>
+            </span>
+            <h3 class="impact-figure font-weight-bold">200+</h3>
+            <h5 class="impact-subtext">Girls Impacted</h5>
+          </div>
+          <div class="col-xs-6 col-sm-2 d-flex flex-column align-items-center text-center mt-3 mt-sm-0">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x icon-background"></i>
+              <i class="fas fa-sync-alt fa-stack-1x icon-foreground"></i>
+            </span>
+            <h3 class="impact-figure font-weight-bold">59%</h3>
+            <h5 class="impact-subtext">Girls Participated for Two Semesters or More</h5>
+          </div>
+          <div class="col-xs-6 col-sm-2 d-flex flex-column align-items-center text-center mt-3 mt-sm-0">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x icon-background"></i>
+              <i class="fas fa-hand-holding-heart fa-stack-1x icon-foreground"></i>
+            </span>
+            <h3 class="impact-figure font-weight-bold">50+</h3>
+            <h5 class="impact-subtext">Volunteers Mobilized</h5>
+          </div>
+        </div>
       </section>
 
       <section id="our-clubs" class="bg-pink col-12 py-5">
-        <h2 class="display3 text-center mb-5 font-weight-bold">Our Clubs</h2>
+        <div class="text-center col-lg-7 col-xs-8 mx-auto mb-3">
+          <h2 class="font-weight-bold">Our Clubs</h2>
+          <i>
+            Our clubs give girls interested in coding a gentle introduction to software, hardware,
+            computer science fundamentals, and leadership through projects, activities, and community speakers.
+          </i>
+        </div>
         <div class="col-12 d-flex justify-content-center">
           <div class="col-lg-8 col-xs-10">
             <ul class="timeline">
               <li>
-                <h5 class="timeline-entry-text h5">Spring 2019</h5>
+                <h5 class="font-weight-bold">Spring 2019</h5>
                 <p>Two clubs are being held at FUSE Coworking. The beginner club is learning web development using
-                  HTML, CSS, and JavaScript. The intermediate club is focusing on softskills including leadership and
-                  mentoring.</p>
+                  HTML, CSS, and JavaScript. The intermediate club is focusing on hardware projects and
+                  softskills including leadership and mentoring.</p>
               </li>
               <li class="previous-club">
-                <h5 class="timeline-entry-text h5">Fall 2018</h5>
+                <h5 class="font-weight-bold">Fall 2018</h5>
                 <p>The girls in the FUSE Coworking club learned advanced web development including making custom
                   extensions for Chrome. They also programmed Micro:Bits microcontrollers using the JavaScript
                   programming language. Girls in a second club learned the basics of computer science through web
                   development using HTML, CSS, and JavaScript.</p>
               </li>
               <li class="previous-club">
-                <h5 class="timeline-entry-text h5">Spring 2018</h5>
-                <p>The FUSE Coworking club taught web development using HTML, CSS, and JavaScript. They learned
-                  leadership skills through our partnership with <a href="http://launchleadership.org" target="_blank"
-                    rel="noopener">Launch Leadership.</a></p>
+                <h5 class="font-weight-bold">Spring 2018</h5>
+                <p>The FUSE Coworking club learned web development using HTML, CSS, and JavaScript.
+                  They were the first club to learn leadership skills through our continued partnership with
+                  <a href="http://launchleadership.org" target="_blank" rel="noopener">Launch Leadership.</a>
+                </p>
               </li>
               <li class="previous-club">
-                <h5 class="timeline-entry-text h5">Fall 2017</h5>
+                <h5 class="font-weight-bold">Fall 2017</h5>
                 <p>Girls at the FUSE Coworking weekend club learned to code drawings and animations using Dr. Racket, a
                   LISP-style programming language. For a final project, the girls created light-up clothing using an
                   Arduino microcontroller, programmable LEDs, and the C++ programming language.</p>
               </li>
               <li class="previous-club">
-                <h5 class="timeline-entry-text h5">Spring 2017</h5>
+                <h5 class="font-weight-bold">Spring 2017</h5>
                 <p>The Goodrich Middle School club programmed Arduino robots with the C++ programming language. A
                   weekend club at Turbine Flats taught game development using the Python programming language and
                   Codesters. The girls completed a community impact project by building
@@ -130,12 +189,12 @@
                   featuring inspiring quotes, stories, and the games they developed.</p>
               </li>
               <li class="previous-club">
-                <h5 class="timeline-entry-text h5">Fall 2016</h5>
+                <h5 class="font-weight-bold">Fall 2016</h5>
                 <p>The Park Middle School club taught game development while the Goodrich Middle School taught computer
                   programming basics using JavaScript and the Khan Academy platform.</p>
               </li>
               <li class="previous-club">
-                <h5 class="timeline-entry-text h5">Spring 2016</h5>
+                <h5 class="font-weight-bold">Spring 2016</h5>
                 <p>Girls Code Lincoln started as a branch of Girls Who Code. Clubs were held after-school at six
                   Lincoln middle schools: Dawes, Park, Culler, Goodrich, Mickle, and Lefler. The girls learned basic
                   programming and game development using the Python programming language on the Codesters platform.</p>
@@ -148,8 +207,8 @@
       </section>
 
       <section id="sponsors-partners" class="bg-grey col-12 py-5">
-        <h2 class="display3 text-center mb-5 font-weight-bold">A Huge Thank You to Our Sponsors and Partners</h2>
-        <h3 class="display4 text-center mb-4">Sponsors</h3>
+        <h2 class="text-center mb-5 font-weight-bold">A Huge Thank You to Our Sponsors and Partners</h2>
+        <h3 class="text-center mb-4">Sponsors</h3>
         <div class="col-10 d-flex flex-wrap justify-content-center mx-auto mb-5 align-items-center">
           <a href="http://mentorsfound.com" target="_blank" rel="noopener">
             <img class="px-3 logo" src="/assets/img/sponsors/mentors.png" alt="Mentors Found">
@@ -161,7 +220,7 @@
             <img class="px-3 logo" src="/assets/img/sponsors/assurity.png" alt="Assurity">
           </a>
         </div>
-        <h3 class="display4 text-center mb-4">Partners</h3>
+        <h3 class="text-center mb-4">Partners</h3>
         <div class="col-10 d-flex flex-wrap justify-content-center mx-auto align-items-center">
           <a href="http://www.launchleadership.org" target="_blank" rel="noopener">
             <img class="px-3 logo" src="/assets/img/partners/launch.png" alt="Launch Leadership">
@@ -190,14 +249,50 @@
           </a>
         </div>
       </section>
+
+      <section id="contact" class="col-12 py-5">
+        <div class="text-center text-white mb-5">
+          <h2 class="font-weight-bold">Contact</h2>
+          <i>Send us a message and we will get back to you soon!</i>
+        </div>
+        <form
+          role="form"
+          name="contact"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          method="POST"
+          class="col-10 col-lg-6 mx-auto text-white"
+        >
+          <div class="row">
+            <p class="d-none">
+              <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+            <div class="form-group col-sm-6">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" name="name" placeholder="Enter name" required>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" placeholder="Enter email" required>
+            </div>
+          </div>
+          <div class="form-group">
+              <label for="message" name="message">Message</label>
+              <textarea name="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+          </div>
+          <button type="submit" class="btn cta-btn float-right">
+            <i class="fas fa-paper-plane text-dark mr-2"></i>
+            Submit
+          </button>
+        </form>
+      </section>
     </main>
 
-    <footer class="row py-3 bg-blue">
-      <div class="col-12 text-light text-center">
+    <footer class="row py-3 bg-grey">
+      <div class="col-12 text-black text-center">
         <div class="my-4">
           <h5><i class="font-weight-bold">Connect With Us</i></h5>
-          <div id="social-links" class=>
-            <!-- Email icon with mailto: link injected here in JS to prevent spam -->
+          <div id="social-links">
             <a href="https://www.instagram.com/girlscodelincoln" target="_blank" rel="noopener" aria-label="Instagram">
               <i class="fab fa-instagram fa-2x mx-2" aria-hidden="true"></i>
             </a>

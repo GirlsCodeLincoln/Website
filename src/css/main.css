@@ -17,9 +17,35 @@ a {
   color: #0A4BED;
 }
 
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .navbar-brand img {
   height: 30px;
   max-width: 45vw;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #CCCCCC;
+}
+
+.navbar-dark .navbar-toggler {
+  color: white;
+  border-color: white;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: none;
+}
+
+.navbar-toggler-icon > .fa-bars {
+  font-size: 25px;
 }
 
 main section.girlscode {
@@ -50,8 +76,30 @@ hr.hr {
   background-color: #EEF1F6;
 }
 
-#donate-button {
-  color: black;
+.bg-purple {
+  background-color: #7662ad;
+}
+
+.bg-indigo {
+  background-color: #2A29B4;
+}
+
+.icon-foreground {
+  color: #EEF1F6;
+}
+
+.icon-background,
+.impact-subtext {
+  color: #7662AD;
+}
+
+.impact-figure {
+  font-size: 42px;
+  margin-bottom: 0;
+}
+
+.impact-subtext {
+  font-size: 18px;
 }
 
 ul.timeline {
@@ -61,7 +109,7 @@ ul.timeline {
 
 ul.timeline::before {
   content: ' ';
-  background: #d4d9df;
+  background: #EEF1F6;
   display: inline-block;
   position: absolute;
   left: 29px;
@@ -115,24 +163,46 @@ ul.timeline > li.previous-club {
   transform: scale(1.04);
 }
 
-.cta-btn {
-  background-color: #D895CA;
-  border: 1px solid #C35DAE;
-  /* GCL Pink, darkened 15% */
+#contact {
+  background: linear-gradient(45deg, #7662AD 0%, #2A29B4 100%);
 }
 
-.cta-btn:hover, .cta-btn:focus {
-  background-color: #D182C1;
+.cta-btn,
+/* increase specificity so text is not white like other nav-items */
+.navbar .nav-item .cta-btn {
+  background-color: #D895CA;
+  color: black;
+
+  /* GCL Pink, darkened 15% */
+  border: 1px solid #C35DAE;
+}
+
+.cta-btn:hover,
+.cta-btn:focus,
+/* Increase specificity so text is not grey like other nav-items */
+.navbar .nav-item .cta-btn:hover,
+.navbar .nav-item .cta-btn:focus {
   /* GCL Pink, darkened 5% */
+  background-color: #D182C1;
+  color: black;
+}
+
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#social-links a {
+  text-decoration: none;
 }
 
 #social-links i {
-  color: white;
+  color: black;
   transition: all 0.3s ease;
 }
 
-#social-links i:hover {
-  color: #D895CA;
+#social-links i:hover,
+#social-links i:focus {
+  color: #0A4BED;
   transform: scale(1.08);
 }
 
