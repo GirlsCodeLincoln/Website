@@ -17,10 +17,6 @@ a {
   color: #0A4BED;
 }
 
-.navbar {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
 .navbar-brand img {
   height: 30px;
   max-width: 45vw;
@@ -163,10 +159,6 @@ ul.timeline > li.previous-club {
   transform: scale(1.04);
 }
 
-#contact {
-  background: linear-gradient(45deg, #7662AD 0%, #2A29B4 100%);
-}
-
 .cta-btn,
 /* increase specificity so text is not white like other nav-items */
 .navbar .nav-item .cta-btn {
@@ -187,22 +179,13 @@ ul.timeline > li.previous-club {
   color: black;
 }
 
-footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-#social-links a {
-  text-decoration: none;
-}
-
 #social-links i {
-  color: black;
+  color: white;
   transition: all 0.3s ease;
 }
 
-#social-links i:hover,
-#social-links i:focus {
-  color: #0A4BED;
+#social-links i:hover {
+  color: #D895CA;
   transform: scale(1.08);
 }
 
