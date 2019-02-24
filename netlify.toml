@@ -13,3 +13,6 @@ ID = "girlscodelincoln.com"
   from = "https://lincolngirlsintech.com"
   to = "https://girlscodelincoln.com"
   status = 301
+[[redirects]]
+  from = "https://beanie.girlscodelincoln.com/"
+  to = "https://www.eventbrite.com/e/build-a-beanie-workshop-registration-57254485708"
