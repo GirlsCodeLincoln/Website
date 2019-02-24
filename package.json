@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "Website for 501(c)(3), Girls Code Lincoln",
   "dependencies": {
+    "htmlhint": "^0.11.0",
     "http-server": "^0.11.1"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "http-server ./src"
+    "start": "http-server ./src",
+    "lint-html": "htmlhint ./src/**/*.html"
   },
   "repository": {
     "type": "git",

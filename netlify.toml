@@ -2,9 +2,9 @@
 ID = "girlscodelincoln.com"
 
 [build]
-  base = "src/"
+  base = "/"
+  command = "npm run html-lint"
   publish = "src/"
-
 [[redirects]]
   from = "https://lincolngirlswhocode.com"
   to = "https://girlscodelincoln.com"
