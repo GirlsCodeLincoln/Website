@@ -6,14 +6,6 @@ ID = "girlscodelincoln.com"
   publish = "src/"
 
 [[redirects]]
-  from = "https://lincolngirlswhocode.com"
-  to = "https://girlscodelincoln.com"
-  status = 301
-[[redirects]]
-  from = "https://lincolngirlsintech.com"
-  to = "https://girlscodelincoln.com"
-  status = 301
-[[redirects]]
   from = "https://donate.girlscodelincoln.com/"
   to = "https://www.gofundme.com/h9j5y-girls-code-lincoln/donate"
   status = 301
@@ -24,4 +16,8 @@ ID = "girlscodelincoln.com"
 [[redirects]]
   from = "https://beanie.girlscodelincoln.com/"
   to = "https://www.eventbrite.com/e/build-a-beanie-workshop-registration-57357514871"
+  status = 301
+[[redirects]]
+  from = "https://beanie.girlscodelincoln.com/code"
+  to = "https://drive.google.com/drive/folders/1lL_ZoWaBMHY9fjOk86XfHTf0Cog14_Sg"
   status = 301
