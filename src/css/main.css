@@ -69,7 +69,7 @@ hr.hr {
 }
 
 .bg-pink {
-  background-color: #D895CA;
+  background-color: #d895ca;
 }
 
 .bg-grey {
@@ -100,6 +100,14 @@ hr.hr {
 
 .impact-subtext {
   font-size: 18px;
+}
+
+#our-clubs {
+  background: url("/assets/img/clubs-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(216, 149, 202, 0.95);
 }
 
 ul.timeline {
@@ -151,8 +159,16 @@ ul.timeline > li.previous-club {
   color: #0A4BED;
 }
 
+#sponsors-partners {
+  background: url("/assets/img/sponsor-background.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(238, 241, 246, 0.8);
+}
+
 #sponsors-partners .logo {
-  max-width: 300px;
+  max-width: 250px;
   height: auto;
   transition: all 0.3s ease;
   padding-top: 1rem;
@@ -174,7 +190,7 @@ ul.timeline > li.previous-club {
   color: black;
 
   /* GCL Pink, darkened 15% */
-  border: 1px solid #C35DAE;
+  border: 1px solid rgb(195, 93, 174);
 }
 
 .cta-btn:hover,
