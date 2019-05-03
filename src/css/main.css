@@ -52,11 +52,11 @@ a {
   min-height: 75vh;
 }
 
-.carousel-inner {
+#main-carousel .carousel-inner {
   height: 100%;
 }
 
-.carousel-inner > .carousel-item {
+#main-carousel .carousel-inner > .carousel-item {
   padding: 8rem 0rem;
   text-align: center;
   height: 100%;
@@ -87,6 +87,20 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+#image-gallery,
+#image-gallery .carousel-item {
+  height: 1000px;
+  max-height: 90vh;
+}
+
+#image-gallery img {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 hr.hr {
