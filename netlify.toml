@@ -7,7 +7,7 @@ ID = "girlscodelincoln.com"
 
 [[redirects]]
   from = "https://donate.girlscodelincoln.com/"
-  to = "https://www.gofundme.com/h9j5y-girls-code-lincoln/donate"
+  to = "https://givetolincoln.com/nonprofits/girls-code-lincoln"
   status = 301
 [[redirects]]
   from = "https://merchandise.girlscodelincoln.com/"
@@ -15,7 +15,7 @@ ID = "girlscodelincoln.com"
   status = 301
 [[redirects]]
   from = "https://beanie.girlscodelincoln.com/"
-  to = "https://www.eventbrite.com/e/build-a-beanie-workshop-registration-57357514871"
+  to = "https://www.eventbrite.com/e/build-a-beanie-workshop-registration-58594364321"
   status = 301
 [[redirects]]
   from = "https://beanie.girlscodelincoln.com/code"
