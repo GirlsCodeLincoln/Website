@@ -52,11 +52,11 @@ a {
   min-height: 75vh;
 }
 
-.carousel-inner {
+#main-carousel .carousel-inner {
   height: 100%;
 }
 
-.carousel-inner > .carousel-item {
+#main-carousel .carousel-inner > .carousel-item {
   padding: 8rem 0rem;
   text-align: center;
   height: 100%;
@@ -89,6 +89,20 @@ a {
   background-size: cover;
 }
 
+#image-gallery,
+#image-gallery .carousel-item {
+  height: 1000px;
+  max-height: 90vh;
+}
+
+#image-gallery img {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
 hr.hr {
   height: 6px;
   background: url("/assets/img/slash.png") repeat-x 0 0;
@@ -100,7 +114,7 @@ hr.hr {
 }
 
 .bg-pink {
-  background-color: #D895CA;
+  background-color: #d895ca;
 }
 
 .bg-grey {
@@ -131,6 +145,15 @@ hr.hr {
 
 .impact-subtext {
   font-size: 18px;
+}
+
+#our-clubs {
+  background:
+    linear-gradient(180deg, rgba(242, 175, 228, 1), rgba(242, 175, 228, 0.9) 80%, rgba(242, 175, 228, 1)),
+    url("/assets/img/clubs-background.jpg");
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 ul.timeline {
@@ -182,8 +205,18 @@ ul.timeline > li.previous-club {
   color: #0A4BED;
 }
 
+#sponsors-partners {
+  background:
+    linear-gradient(180deg, rgba(238, 241, 246, 1), rgba(238, 241, 246, 0.7) 80%, rgba(238, 241, 246, 1)),
+    url("/assets/img/sponsor-background.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* box-shadow: inset 0 0 0 1000px rgba(238, 241, 246, 0.8); */
+}
+
 #sponsors-partners .logo {
-  max-width: 300px;
+  max-width: 250px;
   height: auto;
   transition: all 0.3s ease;
   padding-top: 1rem;
@@ -205,7 +238,7 @@ ul.timeline > li.previous-club {
   color: black;
 
   /* GCL Pink, darkened 15% */
-  border: 1px solid #C35DAE;
+  border: 1px solid rgb(195, 93, 174);
 }
 
 .cta-btn:hover,
