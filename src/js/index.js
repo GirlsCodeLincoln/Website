@@ -104,11 +104,43 @@
     $('#copyright-container').text('Copyright © ' + CURR_YEAR + ' Girls Code Lincoln');
   }
 
+  /**
+   * Programatically adds 3 testimonials from the testimonial list. Refer to assets/json/testimonials.json for the list
+   */
+  function renderTestimonials() {
+    const TESTIMONIAL_JSON_URL = '/assets/json/testimonials.json';
+    const NUM_TESTIMONIALS = 3;
+
+    $.getJSON({
+      url: TESTIMONIAL_JSON_URL,
+      success: function (data) {
+        const indexArr = [];
+
+        while (indexArr.length < NUM_TESTIMONIALS) {
+          const randomIndex = Math.floor(Math.random() * data.length);
+          if (indexArr.indexOf(randomIndex) === -1) {
+            indexArr.push(randomIndex);
+          }
+        }
+
+        const $testimonialQuotes = $('#testimonials .testimony');
+        const $testimonialQuoteAttribution = $('#testimonials .quoted-from');
+
+        for (let i = 0; i < indexArr.length; i++) {
+          const testimonialData = data[indexArr[i]];
+          $testimonialQuotes[i].innerHTML = testimonialData.testimony;
+          $testimonialQuoteAttribution[i].innerHTML = "- " + testimonialData.quotedFrom + " -";
+        }
+      }
+    });
+  }
+
   $(function () {
     // Add handlers after document is ready
     assignNavLinkClickHandlers();
     appendImageGalleryImages();
     assignTimelineShowMoreHandler();
     injectCopyrightStatement();
+    renderTestimonials();
   });
 })();
