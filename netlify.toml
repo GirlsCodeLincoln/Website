@@ -18,10 +18,10 @@ ID = "girlscodelincoln.com"
   to = "https://www.eventbrite.com/e/build-a-beanie-workshop-registration-58594364321"
   status = 301
 [[redirects]]
-  from = "https://beanie.girlscodelincoln.com/code"
-  to = "https://drive.google.com/drive/folders/1lL_ZoWaBMHY9fjOk86XfHTf0Cog14_Sg"
-  status = 301
-[[redirects]]
   from = "https://beanie.girlscodelincoln.com/docs"
   to = "https://drive.google.com/open?id=1ft5nF0yKWGYbaLSQmorOtaFMC9nX6kMTZrBiCdVqWcM"
+  status = 301
+[[redirects]]
+  from = "https://storytelling.girlscodelincoln.com/"
+  to = "https://www.eventbrite.com/e/66705821909/"
   status = 301
