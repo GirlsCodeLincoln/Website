@@ -74,7 +74,7 @@ main section.girlscode img {
 
 hr.hr {
   height: 6px;
-  background: url(/assets/img/slash.png) repeat-x 0 0;
+  background: url("/assets/img/slash.png") repeat-x 0 0;
   border: 0;
 }
 
@@ -218,6 +218,18 @@ ul.timeline > li.previous-club {
   /* GCL Pink, darkened 5% */
   background-color: #D182C1;
   color: black;
+}
+
+.info-btn {
+  background-color: #0A4BED;
+  /* GCL Blue, darkened 15% */
+  border: 1px solid #0734A4;
+}
+
+.info-btn:hover,
+.info-btn:focus {
+  /* GCL Blue, darkened 5% */
+  background-color: #0943D5;
 }
 
 footer {
