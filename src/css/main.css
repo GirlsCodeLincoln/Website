@@ -116,6 +116,15 @@ hr.hr {
   font-size: 18px;
 }
 
+#get-involved {
+  background:
+    linear-gradient(rgba(10, 75, 237, 0.7), rgba(242, 175, 228, 0.7)),
+    url("/assets/img/involvement-background.jpg");
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #our-clubs {
   background:
     linear-gradient(180deg, rgba(242, 175, 228, 1), rgba(242, 175, 228, 0.9) 80%, rgba(242, 175, 228, 1)),
