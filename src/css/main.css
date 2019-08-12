@@ -48,45 +48,14 @@ a {
   font-size: 25px;
 }
 
-#main-carousel {
-  min-height: 75vh;
-}
-
-#main-carousel .carousel-inner {
-  height: 100%;
-}
-
-#main-carousel .carousel-inner > .carousel-item {
-  padding: 8rem 0rem;
+main section.girlscode {
   text-align: center;
-  height: 100%;
+  padding: 8rem 2rem;
 }
 
-.mission-slide {
-  background-image: url("/assets/img/background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 8rem 0rem;
-}
-
-.mission-slide-content,
-.give-to-lincoln-slide-content {
-  max-width: 80vw;
-}
-
-.mission-slide-content > img,
-.give-to-lincoln-slide-content > img {
-  height: 100%;
+main section.girlscode img {
   width: 100%;
   max-width: 500px;
-}
-
-.give-to-lincoln-slide {
-  background: linear-gradient(0deg, rgba(15, 15, 15, 0.4) 0%, rgba(15, 15, 15, 0.4) 100%), url("/assets/img/g2ld-background.PNG");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 #image-gallery,
@@ -105,7 +74,7 @@ a {
 
 hr.hr {
   height: 6px;
-  background: url("/assets/img/slash.png") repeat-x 0 0;
+  background: url(/assets/img/slash.png) repeat-x 0 0;
   border: 0;
 }
 
@@ -249,18 +218,6 @@ ul.timeline > li.previous-club {
   /* GCL Pink, darkened 5% */
   background-color: #D182C1;
   color: black;
-}
-
-.info-btn {
-  background-color: #0A4BED;
-  /* GCL Blue, darkened 15% */
-  border: 1px solid #0734A4;
-}
-
-.info-btn:hover,
-.info-btn:focus {
-  /* GCL Blue, darkened 5% */
-  background-color: #0943D5;
 }
 
 footer {
