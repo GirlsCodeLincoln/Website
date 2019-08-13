@@ -3,7 +3,7 @@
    * Assigns intrapage navigation links to smooth scroll to section based on hash and section id
    */
   function assignIntrapageNavHandlers() {
-    $('.interpage-nav').on('click', function (e) {
+    $('.intrapage-nav').on('click', function (e) {
       // Do not prevent default behavior if href is to an anchor/hash
       if ($(this).attr('href').indexOf('#') === -1) {
         return;
