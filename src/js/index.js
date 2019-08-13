@@ -1,8 +1,8 @@
 (function () {
   /**
-   * Assigns interpage navigation links to smooth scroll to section based on hash and section id
+   * Assigns intrapage navigation links to smooth scroll to section based on hash and section id
    */
-  function assignInterpageNavHandlers() {
+  function assignIntrapageNavHandlers() {
     $('.interpage-nav').on('click', function (e) {
       // Do not prevent default behavior if href is to an anchor/hash
       if ($(this).attr('href').indexOf('#') === -1) {
@@ -106,7 +106,7 @@
 
   $(function () {
     // Add handlers after document is ready
-    assignInterpageNavHandlers();
+    assignIntrapageNavHandlers();
     appendImageGalleryImages();
     assignTimelineShowMoreHandler();
     injectCopyrightStatement();
