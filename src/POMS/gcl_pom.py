@@ -3,9 +3,7 @@
 """
 gcl_pom.py: .
 """
-
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 
 
 __author__ = "Ben Weese"
@@ -22,7 +20,7 @@ class gcl_pom(object):
 	This is the Page Object Model used in test_forms_Page.py for the filling out forms section
 	of Ultimate QA's Automation Exercises.
 	"""
-	URL = 'https://localhost:8080'
+	URL = 'http://localhost:8080'
 
 	# Funding
 	shop = (By.ID, 'shop')
@@ -68,111 +66,114 @@ class gcl_pom(object):
 	def load(self):
 		self.browser.get(self.URL)
 
+	def get_url(self):
+		return self.URL
+
 	# Funding
 	def test_shop(self):
 		element = self.browser.find_element(*self.shop)
 		element.click()
-		self.browser.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	def test_donate(self):
 		element = self.browser.find_element(*self.donate)
 		element.click()
-		self.browser.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	# Joining
 	def test_join_workshop(self):
 		element = self.browser.find_element(*self.join_workshop)
 		element.click()
-		self.browser.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	def test_vol_info(self):
-		element = self.browser.find_element(*self.join_workshop)
+		element = self.browser.find_element(*self.vol_info)
 		element.click()
-		self.browser.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	def test_join_team(self):
 		element = self.browser.find_element(*self.join_team)
 		element.click()
-		self.browser.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	# Sponsors
 	def test_mentors_found(self):
 		element = self.browser.find_element(*self.mentors_found)
 		element.click()
-		self.browser.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	def test_hudl(self):
 		element = self.browser.find_element(*self.hudl)
 		element.click()
-		self.browser.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	def test_assurity(self):
 		element = self.browser.find_element(*self.assurity)
 		element.click()
-		self.browser.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	# Partners
 	def test_launch_leadership(self):
 		element = self.browser.find_element(*self.launch_leadership)
 		element.click()
-		self.browser.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	def test_fuse_coworking(self):
 		element = self.browser.find_element(*self.fuse_coworking)
 		element.click()
-		self.browser.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	def test_make_shift_lincoln(self):
 		element = self.browser.find_element(*self.make_shift_lincoln)
 		element.click()
-		self.browser.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	def test_self_image_defined(self):
 		element = self.browser.find_element(*self.self_image_defined)
 		element.click()
-		self.browser.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	def test_letura_idigima(self):
 		element = self.browser.find_element(*self.letura_idigima)
 		element.click()
-		self.browser.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	def test_carlos_velasco_design(self):
 		element = self.browser.find_element(*self.carlos_velasco_design)
 		element.click()
-		self.browser.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	# Want to be a sponsor?
 	def test_donate_button(self):
 		element = self.browser.find_element(*self.donate_button)
 		element.click()
-		self.browser.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	# Social Media
 	def test_instagram(self):
 		element = self.browser.find_element(*self.instagram)
 		element.click()
-		self.browser.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	def test_facebook(self):
 		element = self.browser.find_element(*self.facebook)
 		element.click()
-		self.browser.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	def test_linked_in(self):
 		element = self.browser.find_element(*self.linked_in)
 		element.click()
-		self.browser.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	def test_youtube(self):
 		element = self.browser.find_element(*self.youtube)
 		element.click()
-		self.browser.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	def test_github(self):
 		element = self.browser.find_element(*self.github)
 		element.click()
-		self.browser.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.TAB)
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	def test_name(self, phrase):
 		element = self.browser.find_element(*self.contact_name)

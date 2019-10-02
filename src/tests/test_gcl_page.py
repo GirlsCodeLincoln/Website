@@ -5,6 +5,8 @@ test_gcl_page.py: Uses Selenium and Pytest to showcase testing automation.
 """
 
 from POMS.gcl_pom import gcl_pom
+from selenium.webdriver import ActionChains
+from selenium.webdriver.common.keys import Keys
 
 __author__ = "Ben Weese"
 __copyright__ = "Copyright 2019, Python Automation"
@@ -23,7 +25,7 @@ def test_shop(browser):
 	"""
 	page = gcl_pom(browser)
 	page.load()
-	page.shop()
+	page.test_shop()
 	assert browser.current_url == 'https://teespring.com/stores/girlscodelincoln'
 	browser.quit()
 
@@ -62,7 +64,7 @@ def test_vol_info(browser):
 	page = gcl_pom(browser)
 	page.load()
 	page.test_vol_info()
-	url = 'https://girlscodelincoln.com/assets/pdf/GCL-Volunteer-Information.pdf'
+	url = page.get_url() + '/assets/pdf/GCL-Volunteer-Information.pdf'
 	assert browser.current_url == url
 	browser.quit()
 
@@ -208,7 +210,7 @@ def test_donate_button(browser):
 	page = gcl_pom(browser)
 	page.load()
 	page.test_donate_button()
-	url = 'https://girlscodelincoln.com/assets/pdf/GCL-Donation-Info.pdf'
+	url = page.get_url() + '/assets/pdf/GCL-Donation-Info.pdf'
 	assert browser.current_url == url
 	browser.quit()
 

@@ -102,6 +102,7 @@
         },
         "public": {
             "hashes": [
+                "sha256:a6ce9906ebb1ff5dcd743895e27b9d537ecc9d548f09f877f137eefa300d72d8",
                 "sha256:e1436a8a99693a9849dfe40b9158f3837b7c309c163b2d3f5b8e9fce23876db1"
             ],
             "version": "==2019.4.13"
