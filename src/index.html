@@ -57,6 +57,7 @@
       <a
         class="cta-btn nav-link font-weight-bold btn btn-sm ml-auto mr-2 d-md-none"
         href="https://donate.girlscodelincoln.com/"
+        id="donate-sm"
         target="_blank" rel="noopener">
           Donate
       </a>
@@ -81,7 +82,7 @@
             <a class="nav-link intrapage-nav" href="#sponsors-partners">Sponsors & Partners</a>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="https://merchandise.girlscodelincoln.com/" target="_blank" rel="noopener">
+            <a class="nav-link" id="shop" href="https://merchandise.girlscodelincoln.com/" target="_blank" rel="noopener">
               Shop
             </a>
           </li>
@@ -93,6 +94,7 @@
             <a
               class="cta-btn nav-link font-weight-bold btn ml-lg-2"
               href="https://donate.girlscodelincoln.com/"
+              id="donate"
               target="_blank" rel="noopener">
                 Donate
             </a>
@@ -168,7 +170,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Student</h5>
                   <div>
-                    <a class="btn btn-sm info-btn text-light" href="https://storytelling.girlscodelincoln.com/"
+                    <a class="btn btn-sm info-btn text-light" id="storytelling" href="https://storytelling.girlscodelincoln.com/"
                       target="_blank" rel="noopener">
                       Join our Workshop</a>
                   </div>
@@ -180,11 +182,13 @@
                   <h5 class="card-title">Volunteer</h5>
                   <div>
                     <a class="btn btn-sm info-btn text-light" href="/assets/pdf/GCL-Volunteer-Information.pdf"
-                        target="_blank" rel="noopener">
+                       id="volunteerInfo"
+                       target="_blank" rel="noopener">
                       Information
                     </a>
                     <a class="btn btn-sm cta-btn" href="https://www.surveymonkey.com/r/2JNS682"
-                      target="_blank" rel="noopener">
+                       id="joinTeam"
+                       target="_blank" rel="noopener">
                       Join our team
                     </a>
                   </div>
@@ -277,41 +281,41 @@
         <h2 class="text-center mb-5 font-weight-bold">A Huge Thank You to Our Sponsors and Partners</h2>
         <h3 class="text-center mb-4">Sponsors</h3>
         <div class="col-10 d-flex flex-wrap justify-content-center mx-auto mb-5 align-items-center">
-          <a href="http://mentorsfound.com" target="_blank" rel="noopener">
+          <a href="http://mentorsfound.com" id="mentorsfound" target="_blank" rel="noopener">
             <img class="px-3 logo" src="/assets/img/sponsors/mentors.png" alt="Mentors Found">
           </a>
-          <a href="http://www.hudl.com" target="_blank" rel="noopener">
+          <a href="http://www.hudl.com" id="hudl" target="_blank" rel="noopener">
             <img class="px-3 logo" src="/assets/img/sponsors/hudl.png" alt="Hudl">
           </a>
-          <a href="http://www.assurity.com/" target="_blank" rel="noopener">
+          <a href="http://www.assurity.com/" id="assurity" target="_blank" rel="noopener">
             <img class="px-3 logo" src="/assets/img/sponsors/assurity.png" alt="Assurity">
           </a>
         </div>
         <h3 class="text-center mb-4">Partners</h3>
         <div class="col-10 d-flex flex-wrap justify-content-center mx-auto align-items-center">
-          <a href="http://www.launchleadership.org" target="_blank" rel="noopener">
+          <a href="http://www.launchleadership.org" id="launchleadership" target="_blank" rel="noopener">
             <img class="px-3 logo" src="/assets/img/partners/launch.png" alt="Launch Leadership">
           </a>
-          <a href="http://www.fusecoworking.com/" target="_blank" rel="noopener">
+          <a href="http://www.fusecoworking.com/" id="fusecoworking" target="_blank" rel="noopener">
             <img class="px-3 logo" src="/assets/img/partners/fuse.png" alt="FUSE Coworking">
           </a>
-          <a href="http://makeshiftlincoln.org/" target="_blank" rel="noopener">
+          <a href="http://makeshiftlincoln.org/" id="makeshiftlincoln" target="_blank" rel="noopener">
             <img class="px-3 logo" src="/assets/img/partners/makeshift.png" alt="Makeshift Lincoln">
           </a>
-          <a href="https://www.selfimagedefined.org/" target="_blank" rel="noopener">
+          <a href="https://www.selfimagedefined.org/" id="selfimagedefined" target="_blank" rel="noopener">
             <img class="px-3 logo" src="/assets/img/partners/selfid.png" alt="Self Image Defined">
           </a>
-          <a href="http://leturaidigima.com" target="_blank" rel="noopener">
+          <a href="http://leturaidigima.com" id="leturaidigima" target="_blank" rel="noopener">
             <img class="px-3 logo" src="/assets/img/partners/letura.png" alt="Letura Idigima">
           </a>
-          <a href="http://www.carlosvelascodesign.com" target="_blank" rel="noopener">
+          <a href="http://www.carlosvelascodesign.com" id="carlosvelascodesign" target="_blank" rel="noopener">
             <img class="px-3 logo" src="/assets/img/partners/carlos.png" alt="Carlos Velasco Design">
           </a>
         </div>
         <div class="col-10 mx-auto"><hr class="hr"></div>
         <div class="mx-auto mt-5 d-flex justify-content-center align-items-center">
           <a class="btn info-btn text-light" role="button"
-            href="assets/pdf/GCL-Donation-Info.pdf" target="_blank" rel="noopener">
+            href="assets/pdf/GCL-Donation-Info.pdf" id="donatebutton" target="_blank" rel="noopener">
             Want to become a Sponsor or Partner?
           </a>
         </div>
@@ -347,7 +351,7 @@
               <label for="message" name="message">Message</label>
               <textarea name="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
           </div>
-          <button type="submit" class="btn cta-btn float-right">
+          <button type="submit" name="submit" class="btn cta-btn float-right">
             <i class="fas fa-paper-plane text-dark mr-2"></i>
             Submit
           </button>
@@ -360,19 +364,19 @@
         <div class="my-4">
           <h5><i class="font-weight-bold">Connect With Us</i></h5>
           <div id="social-links">
-            <a href="https://www.instagram.com/girlscodelincoln" target="_blank" rel="noopener" aria-label="Instagram">
+            <a href="https://www.instagram.com/girlscodelincoln" id="instagram" target="_blank" rel="noopener" aria-label="Instagram">
               <i class="fab fa-instagram fa-2x mx-2" aria-hidden="true"></i>
             </a>
-            <a href="https://www.facebook.com/girlscodelincoln/" target="_blank" rel="noopener" aria-label="Facebook">
+            <a href="https://www.facebook.com/girlscodelincoln/" id="facebook" target="_blank" rel="noopener" aria-label="Facebook">
               <i class="fab fa-facebook-square fa-2x mx-2" aria-hidden="true"></i>
             </a>
-            <a href="https://www.linkedin.com/company/girlscodelincoln" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/company/girlscodelincoln" id="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
               <i class="fab fa-linkedin-in fa-2x mx-2" aria-hidden="true"></i>
             </a>
-            <a href="https://www.youtube.com/channel/UCB1dk_q4VmA48RFak6vRINQ/" target="_blank" rel="nooperner" aria-label="YouTube">
+            <a href="https://www.youtube.com/channel/UCB1dk_q4VmA48RFak6vRINQ/" id="youtube" target="_blank" rel="nooperner" aria-label="YouTube">
               <i class="fab fa-youtube fa-2x mx-2" aria-hidden="true"></i>
             </a>
-            <a href="https://github.com/GirlsCodeLincoln" target="_blank" rel="noopener" aria-label="GitHub">
+            <a href="https://github.com/GirlsCodeLincoln" id="github" target="_blank" rel="noopener" aria-label="GitHub">
               <i class="fab fa-github fa-2x mx-2" aria-hidden="true"></i>
             </a>
           </div>

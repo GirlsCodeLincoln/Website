@@ -12,6 +12,7 @@ requests = "*"
 request = "*"
 selenium = "*"
 pytest = "*"
+poms = "*"
 
 [requires]
 python_version = "3.7"
