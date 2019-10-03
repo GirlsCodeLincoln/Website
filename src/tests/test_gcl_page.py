@@ -280,3 +280,96 @@ def test_github(browser):
 	assert browser.current_url == url
 	browser.quit()
 
+def test_name_blank(browser):
+	"""
+	Testing the name feild.
+	:param browser:
+	"""
+	page = gcl_pom(browser)
+	page.load()
+	page.click_submit()
+	assert page.name_error() == "Please fill out this field."
+
+def test_name_entered(browser):
+	"""
+	Testing the email feild.
+	:param browser:
+	"""
+	page = gcl_pom(browser)
+	page.load()
+	page.test_name("Test")
+	page.click_submit()
+	assert page.name_error() == ""
+
+def test_email_blank(browser):
+	"""
+	Testing the email feild.
+	:param browser:
+	"""
+	page = gcl_pom(browser)
+	page.load()
+	page.test_name("Test")
+	page.click_submit()
+	assert page.email_error() == "Please fill out this field."
+
+def test_email_invalid_1(browser):
+	"""
+	Testing the email feild.
+	:param browser:
+	"""
+	page = gcl_pom(browser)
+	page.load()
+	page.test_name("Test")
+	page.test_email("test")
+	page.click_submit()
+	assert page.email_error() == "Please include an '@' in the email address. 'test' is missing an '@'."
+
+def test_email_invalid_2(browser):
+	"""
+	Testing the email feild.
+	:param browser:
+	"""
+	page = gcl_pom(browser)
+	page.load()
+	page.test_name("Test")
+	page.test_email("test@")
+	page.click_submit()
+	assert page.email_error() == "Please enter a part following '@'. 'test@' is incomplete."
+
+def test_email_invalid_3(browser):
+	"""
+	Testing the email feild.
+	:param browser:
+	"""
+	page = gcl_pom(browser)
+	page.load()
+	page.test_name("Test")
+	page.test_email("test@example.")
+	page.click_submit()
+	assert page.email_error() == "'.' is used at a wrong position in 'example.'."
+
+def test_msg_blank(browser):
+	"""
+	Testing the message feild.
+	:param browser:
+	"""
+	page = gcl_pom(browser)
+	page.load()
+	page.test_name("Test")
+	page.test_email("test@example.com")
+	page.click_submit()
+	assert page.message_error() == "Please fill out this field."
+
+def test_contact_form(browser):
+	"""
+	Testing the message feild.
+	:param browser:
+	"""
+	page = gcl_pom(browser)
+	page.load()
+	page.test_name("Test")
+	page.test_email("test@example.com")
+	page.test_message('Test message please ignore')
+	page.click_submit()
+	assert browser.current_url == page.get_url() + "/"
+

@@ -187,7 +187,22 @@ class gcl_pom(object):
 		element = self.browser.find_element(*self.contact_message)
 		element.send_keys(phrase)
 
-	def test_submit(self):
+	def click_submit(self):
 		element = self.browser.find_element(*self.contact_submit)
 		element.click()
+
+	def name_error(self):
+		element = self.browser.find_element(*self.contact_name)
+		error_msg = element.get_attribute("validationMessage")
+		return error_msg
+
+	def email_error(self):
+		element = self.browser.find_element(*self.contact_email)
+		error_msg = element.get_attribute("validationMessage")
+		return error_msg
+
+	def message_error(self):
+		element = self.browser.find_element(*self.contact_message)
+		error_msg = element.get_attribute("validationMessage")
+		return error_msg
 
