@@ -34,6 +34,8 @@ def browser():
 	if path == "/home/circleci/project":
 		chrome_options.add_argument("--headless")
 		driver = Chrome(executable_path=path + '/chromedriver_linux', options=chrome_options)
+	elif path == "/root/project":
+		driver = Safari()
 	else:
 		driver = Chrome(executable_path=path + '/chromedriver', options=chrome_options)
 	driver.implicitly_wait(10)
