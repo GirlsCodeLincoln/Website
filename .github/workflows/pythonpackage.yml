@@ -18,6 +18,7 @@ jobs:
         python-version: 3.7
     - name: Install dependencies
       run: |
+       safaridriver --enable
        sudo pip3 install pipenv
        pipenv install --dev
        npm install
