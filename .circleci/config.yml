@@ -22,7 +22,7 @@ jobs:
             sudo pip3 install pipenv
             pipenv install --dev
       - run:
-          name: Build Site
+          name: Build Site for localhost:8080
           command: |
             npm install
             npm start
