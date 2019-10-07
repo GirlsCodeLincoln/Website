@@ -5,8 +5,6 @@ test_gcl_page.py: Uses Selenium and Pytest to test Girls Code Lincoln Site.
 """
 
 from POMS.GCLPOM import GCLPOM
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 __author__ = "Ben Weese"
 __copyright__ = "Copyright 2019, Girls Code Lincoln"
@@ -38,7 +36,9 @@ def test_donate(browser):
 	page = GCLPOM(browser)
 	page.load()
 	page.test_donate()
-	assert browser.current_url == 'https://www.paypal.me/girlscodelincoln' or browser.current_url =='https://www.paypal.com/paypalme2/girlscodelincoln'
+	url = 'https://www.paypal.me/girlscodelincoln'
+	url2 = 'https://www.paypal.com/paypalme2/girlscodelincoln'
+	assert browser.current_url == url or browser.current_url == url2
 	browser.quit()
 
 
@@ -250,10 +250,12 @@ def test_linked_in(browser):
 	page = GCLPOM(browser)
 	page.load()
 	page.test_linked_in()
-	wait = WebDriverWait(browser, 10)
-	wait.until(EC.title_contains('Girls Code Lincoln'))
 	url = 'https://www.linkedin.com/company/girlscodelincoln'
-	assert browser.current_url == url
+	url2 = 'https://www.linkedin.com/authwall?trk=ripf&trkInfo=' \
+		'AQE1v7ral7WoJwAAAW2nOo_Ayuv68QtUZIz1mhLo1EulhOe4aYfZxd6UUmnEaD-LvRCXz-VIyFmh5FSBJdLpwvLNy_KYDije_'\
+		'V1i84hiKN1FNiKevHMb6zhQVHx0iL2hMjhekoc=&originalReferer=http://localhost:8080/&sessionRedirect='\
+		'https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fgirlscodelincoln'
+	assert browser.current_url == url or browser.current_url == url2
 	browser.quit()
 
 
