@@ -250,7 +250,7 @@ def test_linked_in(browser):
 	page = GCLPOM(browser)
 	page.load()
 	page.test_linked_in()
-	wait = WebDriverWait(driver, 10)
+	wait = WebDriverWait(browser, 10)
 	wait.until(EC.title_contains('Girls Code Lincoln'))
 	url = 'https://www.linkedin.com/company/girlscodelincoln'
 	assert browser.current_url == url
