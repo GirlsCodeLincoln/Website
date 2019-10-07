@@ -1,4 +1,5 @@
 # Girls Code Lincoln Website
+[![CircleCI](https://circleci.com/gh/GirlsCodeLincoln/Website/tree/master.svg?style=shield)](https://circleci.com/gh/GirlsCodeLincoln/Website/tree/master)
 
 This project is the source code for the nonprofit company, Girls Code Lincoln. It contains information on the organization for those who want to know about us, such as parents and sponsors. The website can be accessed at [girlscodelincoln.com](http://www.girlscodelincoln.com). The website is a basic HTML/CSS/JS website which utilizes [Bootstrap](https://getbootstrap.com/docs/4.2/getting-started/introduction/) and [JQuery](https://jquery.com/)
 
