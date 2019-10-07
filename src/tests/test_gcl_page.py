@@ -37,7 +37,7 @@ def test_donate(browser):
 	page = GCLPOM(browser)
 	page.load()
 	page.test_donate()
-	assert browser.current_url == 'https://www.paypal.me/girlscodelincoln'
+	assert browser.current_url == 'https://www.paypal.me/girlscodelincoln' || 'https://www.paypal.com/paypalme2/girlscodelincoln'
 	browser.quit()
 
 
@@ -249,7 +249,7 @@ def test_linked_in(browser):
 	page = GCLPOM(browser)
 	page.load()
 	page.test_linked_in()
-	time.sleep(5)
+	time.sleep(10)
 	url = 'https://www.linkedin.com/company/girlscodelincoln'
 	assert browser.current_url == url
 	browser.quit()
