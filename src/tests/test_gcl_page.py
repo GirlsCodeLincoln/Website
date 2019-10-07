@@ -251,11 +251,8 @@ def test_linked_in(browser):
 	page.load()
 	page.test_linked_in()
 	url = 'https://www.linkedin.com/company/girlscodelincoln'
-	url2 = 'https://www.linkedin.com/authwall?trk=ripf&trkInfo=' \
-		'AQE1v7ral7WoJwAAAW2nOo_Ayuv68QtUZIz1mhLo1EulhOe4aYfZxd6UUmnEaD-LvRCXz-VIyFmh5FSBJdLpwvLNy_KYDije_'\
-		'V1i84hiKN1FNiKevHMb6zhQVHx0iL2hMjhekoc=&originalReferer=http://localhost:8080/&sessionRedirect='\
-		'https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fgirlscodelincoln'
-	assert browser.current_url == url or browser.current_url == url2
+	url2 = 'https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fgirlscodelincoln'
+	assert browser.current_url == url or url2 in browser.current_url
 	browser.quit()
 
 
