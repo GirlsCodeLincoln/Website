@@ -21,11 +21,7 @@ jobs:
             google-chrome --version
             sudo pip3 install pipenv
             pipenv install --dev
-      - run:
-          name: Build Site for localhost:8080
-          command: |
             npm install
-            npm start
       - save_cache: # cache Python dependencies using checksum of Pipfile as the cache-key
           key: deps9-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
           paths:
@@ -35,6 +31,7 @@ jobs:
       - run:
           name: Run Test
           command: |
+            npm start
             pipenv run pytest --junitxml=~/test-results/junit/results.xml
       - store_test_results: # Upload test results for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
           path: ~/test-results
