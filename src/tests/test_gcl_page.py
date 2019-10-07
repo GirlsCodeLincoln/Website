@@ -249,7 +249,7 @@ def test_linked_in(browser):
 	page = GCLPOM(browser)
 	page.load()
 	page.test_linked_in()
-	time.sleep(2)
+	time.sleep(5)
 	url = 'https://www.linkedin.com/company/girlscodelincoln'
 	assert browser.current_url == url
 	browser.quit()
