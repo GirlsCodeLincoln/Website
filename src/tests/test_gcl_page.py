@@ -5,7 +5,8 @@ test_gcl_page.py: Uses Selenium and Pytest to test Girls Code Lincoln Site.
 """
 
 from POMS.GCLPOM import GCLPOM
-import time
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 __author__ = "Ben Weese"
 __copyright__ = "Copyright 2019, Girls Code Lincoln"
@@ -249,7 +250,8 @@ def test_linked_in(browser):
 	page = GCLPOM(browser)
 	page.load()
 	page.test_linked_in()
-	time.sleep(10)
+	wait = WebDriverWait(driver, 10)
+	wait.until(EC.title_contains('Girls Code Lincoln'))
 	url = 'https://www.linkedin.com/company/girlscodelincoln'
 	assert browser.current_url == url
 	browser.quit()
