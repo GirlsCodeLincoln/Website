@@ -1,0 +1,28 @@
+name: Python package
+
+on: [push]
+
+jobs:
+      
+  build:
+
+    runs-on: macOS-10.14
+    strategy:
+      max-parallel: 4
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+    - name: Install dependencies and run site as localhost:8080
+      run: |
+       safaridriver --enable
+       sudo pip3 install pipenv
+       pipenv install --dev
+       npm install
+       npm start
+    - name: Test with pytest
+      run: |
+        pipenv run pytest --junitxml=~/test-results/junit/results.xml
