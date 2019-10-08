@@ -34,7 +34,7 @@ def browser():
 	path = os.getcwd()
 	# sees if it is being ran buy Circle CI and uses a linux driver.
 	if path == "/home/circleci/project":
-		chrome_options.add_argument("--headless")
+		# chrome_options.add_argument("--headless")
 		driver = Chrome(executable_path=path + '/chromedriver_linux', options=chrome_options)
 	# This checks if it is being ran by GitHub and if so it is being ran on a mac and against Safari.
 	elif path == "/root/project":

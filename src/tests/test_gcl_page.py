@@ -5,6 +5,7 @@ test_gcl_page.py: Uses Selenium and Pytest to test Girls Code Lincoln Site.
 """
 
 from POMS.GCLPOM import GCLPOM
+import urllib.parse
 
 __author__ = "Ben Weese"
 __copyright__ = "Copyright 2019, Girls Code Lincoln"
@@ -36,7 +37,9 @@ def test_donate(browser):
 	page = GCLPOM(browser)
 	page.load()
 	page.test_donate()
-	assert browser.current_url == 'https://www.paypal.me/girlscodelincoln'
+	url = 'https://www.paypal.me/girlscodelincoln'
+	url2 = 'https://www.paypal.com/paypalme2/girlscodelincoln'
+	assert browser.current_url == url or browser.current_url == url2
 	browser.quit()
 
 
@@ -249,7 +252,8 @@ def test_linked_in(browser):
 	page.load()
 	page.test_linked_in()
 	url = 'https://www.linkedin.com/company/girlscodelincoln'
-	assert browser.current_url == url
+	url2 = urllib.parse.quote_plus(url)
+	assert browser.current_url == url or url2 in browser.current_url
 	browser.quit()
 
 
