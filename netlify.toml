@@ -5,6 +5,12 @@ ID = "girlscodelincoln.com"
   base = "src/"
   publish = "src/"
 
+[[headers]]
+  for = "src/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+
 [[redirects]]
   from = "https://donate.girlscodelincoln.com/"
   to = "https://paypal.me/girlscodelincoln"
