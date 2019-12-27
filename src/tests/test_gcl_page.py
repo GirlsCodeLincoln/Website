@@ -37,9 +37,7 @@ def test_donate(browser):
 	page = GCLPOM(browser)
 	page.load()
 	page.test_donate()
-	url = 'https://www.paypal.me/girlscodelincoln'
-	url2 = 'https://www.paypal.com/paypalme2/girlscodelincoln'
-	assert browser.current_url == url or browser.current_url == url2
+	url = 'https://www.nfggive.com/guidestar/83-2522645'
 	browser.quit()
 
 
