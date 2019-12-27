@@ -28,7 +28,7 @@ class GCLPOM(object):
 	donate = (By.ID, 'donate')
 
 	# Joining
-	join_workshop = (By.ID, 'storytelling')
+	join_club = (By.ID, 'join-club')
 	vol_info = (By.ID, 'volunteerInfo')
 	join_team = (By.ID, 'joinTeam')
 
