@@ -209,6 +209,10 @@ ul.timeline > li.previous-club {
   background: linear-gradient(45deg, #7662AD 0%, #2A29B4 100%);
 }
 
+.g-recaptcha {
+  display: inline-block;
+}
+
 .cta-btn,
 /* increase specificity so text is not white like other nav-items */
 .navbar .nav-item .cta-btn {
