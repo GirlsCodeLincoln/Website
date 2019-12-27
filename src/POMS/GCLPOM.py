@@ -103,15 +103,16 @@ class GCLPOM(object):
 		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	# Joining
-	def test_join_workshop(self):
+	def test_join_club(self):
 		"""
 		Creates a web element for interacting.
 		Clicks it.
 		Then moves to the newly opened tab.
 		"""
-		element = self.browser.find_element(*self.join_workshop)
+		element = self.browser.find_element(*self.join_club)
 		element.click()
-		self.browser.switch_to.window(self.browser.window_handles[1])
+		if self.browser.window_handles[1]:
+			self.browser.switch_to.window(self.browser.window_handles[1])
 
 	def test_vol_info(self):
 		"""
