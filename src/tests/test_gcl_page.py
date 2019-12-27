@@ -49,7 +49,7 @@ def test_join_club(browser):
 	"""
 	page = GCLPOM(browser)
 	page.load()
-	page.test_join_workshop()
+	page.test_join_club()
 	url = 'http://localhost:8080'
 	assert browser.current_url == url
 	browser.quit()
