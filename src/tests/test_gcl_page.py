@@ -42,15 +42,15 @@ def test_donate(browser):
 
 
 # Joining
-def test_join_workshop(browser):
+def test_join_club(browser):
 	"""
-	This clicks the join workshop button and verifies you are taken to the correct page.
+	This clicks the join club button and verifies you stay on the current page.
 	:param browser:
 	"""
 	page = GCLPOM(browser)
 	page.load()
-	page.test_join_workshop()
-	url = 'https://www.eventbrite.com/e/create-your-own-interactive-storytelling-microsite-registration-66705821909'
+	page.test_join_club()
+	url = 'http://localhost:8080/'
 	assert browser.current_url == url
 	browser.quit()
 
