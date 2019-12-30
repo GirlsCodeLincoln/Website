@@ -20,14 +20,6 @@ ID = "girlscodelincoln.com"
   to = "https://teespring.com/stores/girlscodelincoln"
   status = 301
 [[redirects]]
-  from = "https://beanie.girlscodelincoln.com/"
-  to = "https://www.eventbrite.com/e/build-a-beanie-workshop-registration-58594364321"
-  status = 301
-[[redirects]]
-  from = "https://beanie.girlscodelincoln.com/docs"
-  to = "https://drive.google.com/open?id=1ft5nF0yKWGYbaLSQmorOtaFMC9nX6kMTZrBiCdVqWcM"
-  status = 301
-[[redirects]]
-  from = "https://storytelling.girlscodelincoln.com/"
-  to = "https://www.eventbrite.com/e/66705821909/"
+  from = "https://maillist.girlscodelincoln.com/"
+  to = "https://mailchi.mp/97830933907d/signup"
   status = 301
