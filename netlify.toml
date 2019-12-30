@@ -19,7 +19,3 @@ ID = "girlscodelincoln.com"
   from = "https://merchandise.girlscodelincoln.com/"
   to = "https://teespring.com/stores/girlscodelincoln"
   status = 301
-[[redirects]]
-  from = "https://mailinglist.girlscodelincoln.com/"
-  to = "https://mailchi.mp/97830933907d/signup"
-  status = 301
