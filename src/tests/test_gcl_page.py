@@ -238,7 +238,7 @@ def test_footer_mailing_list(browser):
 	page.load()
 	page.test_footer_mailing_list
 	url = 'https://mailchi.mp/97830933907d/signup'
-	assert browser.current_url = url
+	assert browser.current_url == url
 	browser.quit()
 
 def test_instagram(browser):
