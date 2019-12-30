@@ -38,8 +38,22 @@ def test_donate(browser):
 	page.load()
 	page.test_donate()
 	url = 'https://www.nfggive.com/guidestar/83-2522645'
+	assert browser.current_url == url
 	browser.quit()
 
+
+# Mailing List
+def test_header_mailing_list(browser):
+	"""
+	This clicks the donate link and verifies you are taken to the correct page.
+	:param browser:
+	"""
+	page = GCLPOM(browser)
+	page.load()
+	page.test_header_mailing_list()
+	url = 'https://mailchi.mp/97830933907d/signup'
+	assert browser.current_url == url
+	browser.quit()
 
 # Joining
 def test_join_club(browser):
@@ -50,7 +64,7 @@ def test_join_club(browser):
 	page = GCLPOM(browser)
 	page.load()
 	page.test_join_club()
-	url = 'http://localhost:8080/'
+	url = 'https://mailchi.mp/97830933907d/signup'
 	assert browser.current_url == url
 	browser.quit()
 
@@ -215,6 +229,18 @@ def test_donate_button(browser):
 
 
 # Social Media
+def test_footer_mailing_list(browser):
+	"""
+	This clicks the Email Logo and verifies syou are taken to the correct page.
+	:param browser:
+	"""
+	page = GCLPOM(browser)
+	page.load()
+	page.test_footer_mailing_list
+	url = 'https://mailchi.mp/97830933907d/signup'
+	assert browser.current_url = url
+	browser.quit()
+
 def test_instagram(browser):
 	"""
 	This clicks the Instagram Logo and verifies you are taken to the correct page.

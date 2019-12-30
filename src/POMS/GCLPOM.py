@@ -27,6 +27,9 @@ class GCLPOM(object):
 	shop = (By.ID, 'shop')
 	donate = (By.ID, 'donate')
 
+	# Mailing List
+	header_mailing_list = (By.ID, 'email-list-header')
+
 	# Joining
 	join_club = (By.ID, 'join-club')
 	vol_info = (By.ID, 'volunteerInfo')
@@ -55,6 +58,7 @@ class GCLPOM(object):
 	contact_submit = (By.NAME, 'submit')
 
 	# Social Media Links
+	footer_mailing_list =(By.ID, 'email-list-footer')
 	instagram = (By.ID, 'instagram')
 	facebook = (By.ID, 'facebook')
 	linked_in = (By.ID, 'linkedin')
@@ -102,6 +106,17 @@ class GCLPOM(object):
 		element.click()
 		self.browser.switch_to.window(self.browser.window_handles[1])
 
+	# Mailing List
+	def test_header_mailing_list(self):
+		"""
+		Creates a web element for interacting.
+		Clicks it.
+		Then moves to the newly opened tab.
+		"""
+		element = self.browser.find_element(*self.header_mailing_list)
+		element.click()
+		self.browser.switch_to.window(self.browser.window[1])
+
 	# Joining
 	def test_join_club(self):
 		"""
@@ -111,8 +126,7 @@ class GCLPOM(object):
 		"""
 		element = self.browser.find_element(*self.join_club)
 		element.click()
-		if len(self.browser.window_handles) > 1:
-			self.browser.switch_to.window(self.browser.window_handles[1])
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	def test_vol_info(self):
 		"""
@@ -238,6 +252,16 @@ class GCLPOM(object):
 		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	# Social Media
+	def test_footer_mailing_list(self):
+		"""
+		Creates a web element for interacting.
+		Clicks it.
+		Then moves to the newly opened tab.
+		"""
+		element = self.browser.find_element(*self.footer_mailing_list)
+		element.click()
+		self.browser.switch_to.window(self.browser.window_handles[1])
+
 	def test_instagram(self):
 		"""
 		Creates a web element for interacting.
