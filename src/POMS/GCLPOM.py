@@ -58,7 +58,7 @@ class GCLPOM(object):
 	contact_submit = (By.NAME, 'submit')
 
 	# Social Media Links
-	footer_mailing_list =(By.ID, 'email-list-footer')
+	footer_mailing_list = (By.ID, 'email-list-footer')
 	instagram = (By.ID, 'instagram')
 	facebook = (By.ID, 'facebook')
 	linked_in = (By.ID, 'linkedin')
@@ -115,7 +115,7 @@ class GCLPOM(object):
 		"""
 		element = self.browser.find_element(*self.header_mailing_list)
 		element.click()
-		self.browser.switch_to.window(self.browser.window[1])
+		self.browser.switch_to.window(self.browser.window_handles[1])
 
 	# Joining
 	def test_join_club(self):

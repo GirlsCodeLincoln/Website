@@ -51,7 +51,7 @@ def test_header_mailing_list(browser):
 	page = GCLPOM(browser)
 	page.load()
 	page.test_header_mailing_list()
-	url = 'https://mailchi.mp/97830933907d/signup'
+	url = 'https://www.mailchi.mp/97830933907d/signup'
 	assert browser.current_url == url
 	browser.quit()
 
@@ -64,7 +64,7 @@ def test_join_club(browser):
 	page = GCLPOM(browser)
 	page.load()
 	page.test_join_club()
-	url = 'https://mailchi.mp/97830933907d/signup'
+	url = 'https://www.mailchi.mp/97830933907d/signup'
 	assert browser.current_url == url
 	browser.quit()
 
@@ -236,8 +236,8 @@ def test_footer_mailing_list(browser):
 	"""
 	page = GCLPOM(browser)
 	page.load()
-	page.test_footer_mailing_list
-	url = 'https://mailchi.mp/97830933907d/signup'
+	page.test_footer_mailing_list()
+	url = 'https://www.mailchi.mp/97830933907d/signup'
 	assert browser.current_url == url
 	browser.quit()
 
