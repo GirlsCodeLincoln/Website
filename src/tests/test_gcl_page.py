@@ -64,7 +64,7 @@ def test_join_club(browser):
 	page = GCLPOM(browser)
 	page.load()
 	page.test_join_club()
-	url = 'https://docs.google.com/forms/d/e/1FAIpQLSc0rCOUUI69SdQa-KEC6uKcmwdEKrsV-w2BzzhJln8Iu9LP2A/viewform'
+	url = GCLPOM.URL
 	assert browser.current_url == url
 	browser.quit()
 

@@ -126,7 +126,8 @@ class GCLPOM(object):
 		"""
 		element = self.browser.find_element(*self.join_club)
 		element.click()
-		self.browser.switch_to.window(self.browser.window_handles[1])
+		if len(self.browser.window_handles) > 1:
+			self.browser.switch_to.window(self.browser.window_handles[1])
 
 	def test_vol_info(self):
 		"""
