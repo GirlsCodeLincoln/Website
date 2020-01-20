@@ -64,7 +64,7 @@ def test_join_club(browser):
 	page = GCLPOM(browser)
 	page.load()
 	page.test_join_club()
-	url = GCLPOM.URL
+	url = f"{GCLPOM.URL}/"
 	assert browser.current_url == url
 	browser.quit()
 
