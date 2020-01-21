@@ -17,6 +17,11 @@ a {
   color: #0A4BED;
 }
 
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
+
 .navbar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
