@@ -241,17 +241,17 @@ def test_footer_mailing_list(browser):
 	assert browser.current_url == url
 	browser.quit()
 
-def test_instagram(browser):
-	"""
-	This clicks the Instagram Logo and verifies you are taken to the correct page.
-	:param browser:
-	"""
-	page = GCLPOM(browser)
-	page.load()
-	page.test_instagram()
-	url = 'https://www.instagram.com/girlscodelincoln/'
-	assert browser.current_url == url
-	browser.quit()
+#def test_instagram(browser):
+#	"""
+#	This clicks the Instagram Logo and verifies you are taken to the correct page.
+#	:param browser:
+#	"""
+#	page = GCLPOM(browser)
+#	page.load()
+#	page.test_instagram()
+#	url = 'https://www.instagram.com/girlscodelincoln/'
+#	assert browser.current_url == url
+#	browser.quit()
 
 
 def test_facebook(browser):
