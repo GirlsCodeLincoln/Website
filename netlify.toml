@@ -10,12 +10,3 @@ ID = "girlscodelincoln.com"
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
-
-[[redirects]]
-  from = "https://donate.girlscodelincoln.com/"
-  to = "https://www.nfggive.com/guidestar/83-2522645"
-  status = 301
-[[redirects]]
-  from = "https://merchandise.girlscodelincoln.com/"
-  to = "https://teespring.com/stores/girlscodelincoln"
-  status = 301
