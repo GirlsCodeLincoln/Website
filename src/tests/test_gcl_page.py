@@ -117,7 +117,7 @@ def test_hudl(browser):
 	page = GCLPOM(browser)
 	page.load()
 	page.test_hudl()
-	url = 'http://www.hudl.com/'
+	url = 'https://www.hudl.com/'
 	assert browser.current_url == url
 	browser.quit()
 
