@@ -10,3 +10,15 @@ ID = "girlscodelincoln.com"
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
+
+[[redirects]]
+  from = "https://www.girlscodelincoln.org/*"
+  to = "https://girlscodelincoln.org/:splat"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "https://www.girlscodelincoln.com/*"
+  to = "https://girlscodelincoln.com/:splat"
+  status = 302
+  force = true
