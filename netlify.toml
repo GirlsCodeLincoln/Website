@@ -12,13 +12,19 @@ ID = "girlscodelincoln.com"
     X-XSS-Protection = "1; mode=block"
 
 [[redirects]]
-  from = "https://www.girlscodelincoln.org/*"
+  from = "https://girlscodelincoln.com/*"
   to = "https://girlscodelincoln.org/:splat"
-  status = 302
+  status = 301
   force = true
 
 [[redirects]]
   from = "https://www.girlscodelincoln.com/*"
-  to = "https://girlscodelincoln.com/:splat"
+  to = "https://girlscodelincoln.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.girlscodelincoln.org/*"
+  to = "https://girlscodelincoln.org/:splat"
   status = 302
   force = true
