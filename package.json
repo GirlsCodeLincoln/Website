@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Website for 501(c)(3), Girls Code Lincoln",
   "dependencies": {
-    "http-server": "0.12.1"
+    "http-server": "0.12.3"
   },
   "devDependencies": {},
   "scripts": {
