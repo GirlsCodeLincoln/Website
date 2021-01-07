@@ -2,12 +2,13 @@
   "name": "gcl-website",
   "version": "1.0.0",
   "description": "Website for 501(c)(3), Girls Code Lincoln",
-  "dependencies": {
-    "http-server": "0.12.3"
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
   },
-  "devDependencies": {},
   "scripts": {
-    "start": "http-server ./src"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
