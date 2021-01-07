@@ -28,16 +28,14 @@ npm run start
 After this command, a local development server should be available and an output similar to this should be outputted to your shell
 
 ```bash
-Starting up http-server, serving ./src
-Available on:
-  http://172.22.114.113:8080
-  http://10.0.75.1:8080
-  http://192.168.8.146:8080
-  http://127.0.0.1:8080
-Hit CTRL-C to stop the server
+[nodemon] 2.0.7
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node app.js`
+Listening at http://localhost:3000
 ```
 
-When you access one of these local hosts, the shell will output any local imports that are made and if they were successful.
 The contact form submissions are done through Netlify, so submissions on localhost will not work. Refer to the website's [Netlify](https://app.netlify.com/sites/girlscodelincoln/settings/forms) to make changes to the contact form.
 
 ## Deployment
