@@ -1,7 +1,7 @@
 # Girls Code Lincoln Website
 [![CircleCI](https://circleci.com/gh/GirlsCodeLincoln/Website/tree/master.svg?style=shield)](https://circleci.com/gh/GirlsCodeLincoln/Website/tree/master) ![GitHub issues](https://img.shields.io/github/issues-raw/GirlsCodeLincoln/Website.svg)
 
-This project is the source code for the nonprofit company, Girls Code Lincoln. It contains information on the organization for those who want to know about us, such as parents and sponsors. The website can be accessed at [girlscodelincoln.com](http://www.girlscodelincoln.com). The website is a basic HTML/CSS/JS website which utilizes [Bootstrap](https://getbootstrap.com/docs/4.2/getting-started/introduction/) and [JQuery](https://jquery.com/)
+This project is the source code for the nonprofit company, Girls Code Lincoln. It contains information on the organization for those who want to know about us, such as parents and sponsors. The website can be accessed at [girlscodelincoln.org](http://www.girlscodelincoln.org). The website is a basic HTML/CSS/JS website which utilizes [Bootstrap](https://getbootstrap.com/docs/4.2/getting-started/introduction/) and [JQuery](https://jquery.com/)
 
 ## Getting Started
 
@@ -40,4 +40,4 @@ The contact form submissions are done through Netlify, so submissions on localho
 
 ## Deployment
 
-When any changes are made to the master branch of the [repository](https://github.com/GirlsCodeLincoln/Website), the changes are automatically deployed to [girlscodelincoln.com](http://www.girlscodelincoln.com) via [Netlify](https://app.netlify.com/sites/girlscodelincoln/overview)
+When any changes are made to the master branch of the [repository](https://github.com/GirlsCodeLincoln/Website), the changes are automatically deployed to [girlscodelincoln.org](http://www.girlscodelincoln.org) via [Netlify](https://app.netlify.com/sites/girlscodelincoln/overview)
