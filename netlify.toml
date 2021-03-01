@@ -28,3 +28,9 @@ ID = "girlscodelincoln.org"
   to = "https://girlscodelincoln.org/:splat"
   status = 302
   force = true
+
+[[redirects]]
+  from = "https://girlscodelincoln.org/speakerseries"
+  to = "https://www.facebook.com/girlscodelincoln/events"
+  status = 302
+  force = true
