@@ -143,9 +143,8 @@ hr.hr {
 }
 
 #reading-challenge .logo {
-  max-width: 200px;
-  min-width: 200px;
-  height: auto;
+  max-width: 210px;
+  height: 125px;
   transition: all 0.3s ease;
   padding-top: 1rem;
   padding-bottom: 1rem;
