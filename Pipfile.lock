@@ -112,7 +112,7 @@
                 "sha256:64f65755aee5b381cea27766a3a147c3f15b9b6b9ac88676de66ba2ae36793fa",
                 "sha256:dc639b046a6e2cff5bbe40194ad65936d6ba360b52b3c3fe1d08a82dd50b5e53"
             ],
-            "version": "==1.8.0"
+            "version": "==1.10.0"
         },
         "pyparsing": {
             "hashes": [
@@ -170,7 +170,7 @@
                 "sha256:3de946ffbed6e6746608990594d08faac602528ac7015ac28d33cee6a45b7398",
                 "sha256:9a107b99a5393caf59c7aa3c1249c16e6879447533d0887f4336dde834c7be86"
             ],
-            "version": "==1.25.6"
+            "version": "==1.26.5"
         },
         "wcwidth": {
             "hashes": [
@@ -252,7 +252,7 @@
                 "sha256:64f65755aee5b381cea27766a3a147c3f15b9b6b9ac88676de66ba2ae36793fa",
                 "sha256:dc639b046a6e2cff5bbe40194ad65936d6ba360b52b3c3fe1d08a82dd50b5e53"
             ],
-            "version": "==1.8.0"
+            "version": "==1.10.0"
         },
         "pyparsing": {
             "hashes": [
@@ -289,7 +289,7 @@
                 "sha256:3de946ffbed6e6746608990594d08faac602528ac7015ac28d33cee6a45b7398",
                 "sha256:9a107b99a5393caf59c7aa3c1249c16e6879447533d0887f4336dde834c7be86"
             ],
-            "version": "==1.25.6"
+            "version": "==1.26.5"
         },
         "wcwidth": {
             "hashes": [
