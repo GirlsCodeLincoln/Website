@@ -121,40 +121,6 @@ hr.hr {
   font-size: 18px;
 }
 
-#reading-challenge {
-  background: linear-gradient(180deg, rgb(255 213 246) 0%, rgb(255 223 248 / 90%) 100%), url("/assets/img/gallery/girlscode-9.jpg");
-  background-position: center right;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
-#reading-challenge p {
-  margin-bottom: 20px !important;
-  font-size: 20px;
-}
-
-#reading-challenge .logo.library {
-  padding: 0px;
-  max-width: 200px;
-  height: auto;
-  transition: all 0.3s ease;
-  display: inline-block;
-}
-
-#reading-challenge .logo {
-  max-width: 210px;
-  height: 125px;
-  transition: all 0.3s ease;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  display: block;
-}
-
-#reading-challenge .logo:hover {
-  transform: scale(1.04);
-}
-
 #get-involved {
   background:
     linear-gradient(rgba(10, 75, 237, 0.9), rgba(242, 175, 228, 0.7)),
@@ -234,6 +200,7 @@ ul.timeline > li.previous-club {
 
 #sponsors-partners .logo {
   max-width: 250px;
+  min-width: 250px;
   height: auto;
   transition: all 0.3s ease;
   padding-top: 1rem;
