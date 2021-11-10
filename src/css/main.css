@@ -23,6 +23,7 @@ button:disabled {
 }
 
 .navbar {
+    height: 60px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -58,6 +59,7 @@ button:disabled {
 }
 
 main section.girlscode {
+    margin-top: 60px;
     text-align: center;
     padding: 8rem 2rem;
 }
