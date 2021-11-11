@@ -14,8 +14,8 @@
       const target = this.hash;
       const $target = $(target); // use hash as a selector to find the section by id
       $('html, body').stop().animate({
-        'scrollTop': $target.offset().top
-      }, 700, 'swing', function () {
+        'scrollTop': $('.navbar').css('position') === 'sticky' ? $target.offset().top - $('.navbar').outerHeight() : $target.offset().top // scroll to section location minus the height of navbar
+    }, 700, 'swing', function () {
         window.location.hash = target;
       });
     });
@@ -40,7 +40,7 @@
     // isActive is a boolean. When true, the class "active" is added to the li
     const getCarouselIndicatorsItemMarkup = function(index, isActive) {
       const carouselIndicatorClass = (isActive) ? ' class="active"' : '';
-      return '<li data-target="#image-carousel" data-slide-to="' + index + '"' + carouselIndicatorClass + '></li>'; 
+      return '<li data-target="#image-carousel" data-slide-to="' + index + '"' + carouselIndicatorClass + '></li>';
     }
 
     // array of objects denoting src of img, alt text, and any custom css applied to the image
