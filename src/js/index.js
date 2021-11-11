@@ -14,9 +14,8 @@
       const target = this.hash;
       const $target = $(target); // use hash as a selector to find the section by id
       $('html, body').stop().animate({
-        'scrollTop': $('.navbar').css('position') === 'fixed' ? $target.offset().top - $('.navbar').height() : $target.offset().top // scroll to section location minus the height of navbar
+        'scrollTop': $('.navbar').css('position') === 'sticky' ? $target.offset().top - $('.navbar').outerHeight() : $target.offset().top // scroll to section location minus the height of navbar
     }, 700, 'swing', function () {
-        console.log($target.offset())
         window.location.hash = target;
       });
     });

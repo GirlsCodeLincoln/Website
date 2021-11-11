@@ -3,7 +3,7 @@ html {
     line-height: 1.5;
     height: 100%;
     box-sizing: border-box;
-    scroll-padding-top: 45px; /* height of sticky header */
+    scroll-padding-top: 60px; /* height of sticky header */
 }
 
 body {
@@ -24,11 +24,11 @@ button:disabled {
 }
 
 .navbar {
-    height: 60px;
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
-    width: 100%;
     z-index: 500;
+    height: 60px;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 30%);
 }
 
@@ -60,7 +60,6 @@ button:disabled {
 }
 
 main section.girlscode {
-    margin-top: 60px;
     text-align: center;
     padding: 8rem 2rem;
 }
