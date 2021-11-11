@@ -3,6 +3,7 @@ html {
     line-height: 1.5;
     height: 100%;
     box-sizing: border-box;
+    scroll-padding-top: 45px; /* height of sticky header */
 }
 
 body {
@@ -67,6 +68,10 @@ main section.girlscode {
 main section.girlscode img {
     width: 100%;
     max-width: 500px;
+}
+
+section {
+
 }
 
 #image-gallery,
@@ -136,13 +141,6 @@ hr.hr {
     background-position: center right;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-#podcast {
-    background-position: center right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
 }
 
 #our-clubs {

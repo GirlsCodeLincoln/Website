@@ -16,7 +16,8 @@
       $('html, body').stop().animate({
         'scrollTop': $('.navbar').css('position') === 'fixed' ? $target.offset().top - $('.navbar').height() : $target.offset().top // scroll to section location minus the height of navbar
     }, 700, 'swing', function () {
-        window.location.hash = $('.navbar').css('position') === 'fixed' ? $target.offset().top - $('.navbar').height() : target; // end at section location minus the height of navbar
+        console.log($target.offset())
+        window.location.hash = target;
       });
     });
   }
