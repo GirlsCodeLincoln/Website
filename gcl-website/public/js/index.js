@@ -96,19 +96,10 @@
     });
   }
 
-  /**
-   * Programatically add copyright message with current year
-   */
-  function injectCopyrightStatement() {
-    const CURR_YEAR = (new Date()).getFullYear();
-    $('#copyright-container').text('Copyright © ' + CURR_YEAR + ' Girls Code Lincoln');
-  }
-
   $(function () {
     // Add handlers after document is ready
     assignIntrapageNavHandlers();
     appendImageGalleryImages();
     assignTimelineShowMoreHandler();
-    injectCopyrightStatement();
   });
 })();
