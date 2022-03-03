@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+
 const ContactForm = () => {
   return (
     <section className="col-12 py-5" id="contact">
@@ -53,7 +56,10 @@ const ContactForm = () => {
         <div className="text-center mb-3" data-netlify-recaptcha="true"></div>
         <div className="text-center">
           <button className="btn cta-btn" name="submit" type="submit">
-            <i className="fas fa-paper-plane text-dark mr-2"></i>
+            <FontAwesomeIcon
+              icon={faPaperPlane}
+              style={{ marginRight: "0.5em" }}
+            />
             Submit
           </button>
         </div>

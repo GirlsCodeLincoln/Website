@@ -1,3 +1,12 @@
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookSquare,
+  faGithub,
+  faInstagram,
+  faLinkedinIn,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { getCurrentYear } from "../utils";
 
 const Footer = () => {
@@ -9,66 +18,23 @@ const Footer = () => {
             <i className="font-weight-bold">Connect With Us</i>
           </h5>
           <div id="social-links">
-            <a
-              aria-label="Mailing List"
-              href="https://www.mailchi.mp/97830933907d/signup"
-              id="email-list-footer"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <i className="fas fa-envelope fa-2x mx-2"></i>
-            </a>
-            <a
-              aria-label="Instagram"
-              href="https://www.instagram.com/girlscodelincoln/"
-              id="instagram"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <i aria-hidden="true" className="fab fa-instagram fa-2x mx-2"></i>
-            </a>
-            <a
-              aria-label="Facebook"
-              href="https://www.facebook.com/girlscodelincoln/"
-              id="facebook"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <i
-                aria-hidden="true"
-                className="fab fa-facebook-square fa-2x mx-2"
-              ></i>
-            </a>
-            <a
-              aria-label="LinkedIn"
-              href="https://www.linkedin.com/company/girlscodelincoln"
-              id="linkedin"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <i
-                aria-hidden="true"
-                className="fab fa-linkedin-in fa-2x mx-2"
-              ></i>
-            </a>
-            <a
-              aria-label="YouTube"
-              href="https://www.youtube.com/channel/UCB1dk_q4VmA48RFak6vRINQ/"
-              id="youtube"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <i aria-hidden="true" className="fab fa-youtube fa-2x mx-2"></i>
-            </a>
-            <a
-              aria-label="GitHub"
-              href="https://github.com/GirlsCodeLincoln"
-              id="github"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <i aria-hidden="true" className="fab fa-github fa-2x mx-2"></i>
-            </a>
+            {socialButtons.map((socialButton) => (
+              <a
+                aria-label={socialButton.name}
+                href={socialButton.href}
+                id={socialButton.id}
+                key={socialButton.id}
+                rel="noopener noreferrer"
+                target="_blank"
+                style={{ margin: "0 0.25em" }}
+              >
+                <FontAwesomeIcon
+                  icon={socialButton.icon}
+                  fixedWidth
+                  size="2x"
+                />
+              </a>
+            ))}
           </div>
         </div>
         <i>Lincoln, NE</i>
@@ -80,5 +46,44 @@ const Footer = () => {
     </footer>
   );
 };
+
+const socialButtons = [
+  {
+    id: "email-list-footer",
+    name: "Mailing List",
+    href: "https://www.mailchi.mp/97830933907d/signup",
+    icon: faEnvelope,
+  },
+  {
+    id: "instagram",
+    name: "Instagram",
+    href: "https://www.instagram.com/girlscodelincoln/",
+    icon: faInstagram,
+  },
+  {
+    id: "facebook",
+    name: "Facebook",
+    href: "https://www.facebook.com/girlscodelincoln/",
+    icon: faFacebookSquare,
+  },
+  {
+    id: "linkedin",
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/company/girlscodelincoln",
+    icon: faLinkedinIn,
+  },
+  {
+    id: "youtube",
+    name: "YouTube",
+    href: "https://www.youtube.com/channel/UCB1dk_q4VmA48RFak6vRINQ/",
+    icon: faYoutube,
+  },
+  {
+    id: "github",
+    name: "GitHub",
+    href: "https://github.com/GirlsCodeLincoln",
+    icon: faGithub,
+  },
+];
 
 export default Footer;

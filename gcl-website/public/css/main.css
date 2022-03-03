@@ -113,14 +113,6 @@ hr.hr {
     background-color: #2A29B4;
 }
 
-.icon-foreground {
-    color: #EEF1F6;
-}
-
-.icon-background {
-    color: #d895ca;
-}
-
 .impact-subtext {
     color: black;
 }
@@ -273,13 +265,13 @@ footer {
     text-decoration: none;
 }
 
-#social-links i {
+#social-links svg {
     color: black;
     transition: all 0.3s ease;
 }
 
-#social-links i:hover,
-#social-links i:focus {
+#social-links svg:hover,
+#social-links svg:focus {
     color: #0A4BED;
     transform: scale(1.08);
 }

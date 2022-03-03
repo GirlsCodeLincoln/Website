@@ -1,3 +1,11 @@
+import {
+  faFemale,
+  faHandHoldingHeart,
+  faLaptopCode,
+  faRotate,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const About = () => {
   return (
     <section
@@ -20,47 +28,54 @@ const About = () => {
       </div>
       <h3 className="text-center mb-4">Our Impact</h3>
       <div className="col-9 d-flex flex-row justify-content-between align-items-start mx-auto flex-wrap">
-        <div className="col-xs-6 col-sm-2 d-flex flex-column align-items-center text-center">
-          <span className="fa-stack fa-4x">
-            <i className="fas fa-circle fa-stack-2x icon-background"></i>
-            <i className="fas fa-laptop-code fa-stack-1x icon-foreground"></i>
-          </span>
-          <h3 className="impact-figure font-weight-bold">20+</h3>
-          <h5 className="impact-subtext">
-            Multiweek Tech & Leadership Clubs Completed
-          </h5>
-        </div>
-        <div className="col-xs-6 col-sm-2 d-flex flex-column align-items-center text-center mt-3 mt-sm-0">
-          <span className="fa-stack fa-4x">
-            <i className="fas fa-circle fa-stack-2x icon-background"></i>
-            <i className="fas fa-female fa-stack-1x icon-foreground"></i>
-          </span>
-          <h3 className="impact-figure font-weight-bold">200+</h3>
-          <h5 className="impact-subtext">
-            Girls Impacted Through Clubs and Workshops
-          </h5>
-        </div>
-        <div className="col-xs-6 col-sm-2 d-flex flex-column align-items-center text-center mt-3 mt-sm-0">
-          <span className="fa-stack fa-4x">
-            <i className="fas fa-circle fa-stack-2x icon-background"></i>
-            <i className="fas fa-sync-alt fa-stack-1x icon-foreground"></i>
-          </span>
-          <h3 className="impact-figure font-weight-bold">72%</h3>
-          <h5 className="impact-subtext">
-            of Girls Return for Two or More Semesters
-          </h5>
-        </div>
-        <div className="col-xs-6 col-sm-2 d-flex flex-column align-items-center text-center mt-3 mt-sm-0">
-          <span className="fa-stack fa-4x">
-            <i className="fas fa-circle fa-stack-2x icon-background"></i>
-            <i className="fas fa-hand-holding-heart fa-stack-1x icon-foreground"></i>
-          </span>
-          <h3 className="impact-figure font-weight-bold">50+</h3>
-          <h5 className="impact-subtext">Volunteers Support Our Work</h5>
-        </div>
+        {impactStats.map((impactStat) => (
+          <div className="col-xs-6 col-sm-2 d-flex flex-column align-items-center text-center">
+            <div
+              style={{
+                backgroundColor: "#d895ca",
+                color: "#EEF1F6",
+                borderRadius: "50%",
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                height: "8em",
+                width: "8em",
+              }}
+            >
+              <FontAwesomeIcon icon={impactStat.icon} fixedWidth size="4x" />
+            </div>
+            <h3 className="impact-figure font-weight-bold">
+              {impactStat.figure}
+            </h3>
+            <h5 className="impact-subtext">{impactStat.subtext}</h5>
+          </div>
+        ))}
       </div>
     </section>
   );
 };
+
+const impactStats = [
+  {
+    figure: "20+",
+    subtext: "Multiweek Tech & Leadership Clubs Completed",
+    icon: faLaptopCode,
+  },
+  {
+    figure: "200+",
+    subtext: "Girls Impacted Through Clubs and Workshops",
+    icon: faFemale,
+  },
+  {
+    figure: "72%",
+    subtext: "of Girls Return for Two or More Semesters",
+    icon: faRotate,
+  },
+  {
+    figure: "50+",
+    subtext: "Volunteers Support Our Work",
+    icon: faHandHoldingHeart,
+  },
+];
 
 export default About;

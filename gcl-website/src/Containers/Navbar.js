@@ -1,3 +1,6 @@
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-md row bg-blue navbar-dark">
@@ -26,7 +29,7 @@ const Navbar = () => {
         type="button"
       >
         <span className="navbar-toggler-icon d-flex justify-content-center align-items-center">
-          <i aria-hidden="true" className="fas fa-bars"></i>
+          <FontAwesomeIcon icon={faBars} aria-hidden="true" />
         </span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
