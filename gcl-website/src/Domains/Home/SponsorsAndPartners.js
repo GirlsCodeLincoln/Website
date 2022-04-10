@@ -1,3 +1,5 @@
+import { Button, Grid, TextField, Typography } from '@mui/material';
+
 const SponsorsAndPartners = () => {
   return (
     <section className="col-12 py-5" id="sponsors-partners">
@@ -40,7 +42,8 @@ const SponsorsAndPartners = () => {
       </div>
 
       <div className="mx-auto mt-5 d-flex justify-content-center align-items-center">
-        <a
+        <Button
+          variant="contained"
           className="btn info-btn text-light"
           href="assets/pdf/GCL-Donation-Info.pdf"
           id="donatebutton"
@@ -49,7 +52,7 @@ const SponsorsAndPartners = () => {
           target="_blank"
         >
           Want to become a Sponsor or Partner?
-        </a>
+        </Button>
       </div>
     </section>
   );

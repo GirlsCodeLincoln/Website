@@ -1,37 +1,43 @@
-import About from "./Containers/About";
-import ClubsOverview from "./Containers/ClubsOverview";
-import ContactForm from "./Containers/ContactForm";
-import Footer from "./Containers/Footer";
-import GetInvolved from "./Containers/GetInvolved";
-import HeroHeader from "./Containers/HeroHeader";
-import ImageGallery from "./Containers/ImageGallery";
-import Navbar from "./Containers/Navbar";
-import Podcast from "./Containers/Podcast";
-import SponsorsAndPartners from "./Containers/SponsorsAndPartners";
+import About from './Domains/About';
+import ClubsOverview from './Domains/JoinClubs/ClubsOverview';
+import ContactForm from './Domains/Home/ContactForm';
+import Footer from './Components/Footer';
+import GetInvolved from './Domains/GetInvolved/GetInvolved';
+import HeroHeader from './Domains/Home/HeroHeader';
+import ImageGallery from './Domains/Home/ImageGallery';
+import Navbar from './Components/Navbar';
+import Podcast from './Domains/Home/Podcast';
+import SponsorsAndPartners from './Domains/Home/SponsorsAndPartners';
+import { CssBaseline, ThemeProvider } from '@mui/material';
+import theme from './theme';
 
 const App = () => {
   return (
     <div className="App">
-      <div className="container-fluid">
-        <Navbar />
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
 
-        <main className="row">
-          <HeroHeader />
+        <div className="container-fluid">
+          <Navbar />
 
-          <About />
-          <GetInvolved />
-          <Podcast />
+          <main className="row">
+            <HeroHeader />
 
-          <ImageGallery />
-          <ClubsOverview />
+            <About />
+            <GetInvolved />
+            <Podcast />
 
-          <SponsorsAndPartners />
+            <ImageGallery />
+            <ClubsOverview />
 
-          <ContactForm />
-        </main>
+            <SponsorsAndPartners />
 
-        <Footer />
-      </div>
+            <ContactForm />
+          </main>
+
+          <Footer />
+        </div>
+      </ThemeProvider>
     </div>
   );
 };
