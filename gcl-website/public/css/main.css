@@ -230,25 +230,6 @@ ul.timeline > li.previous-club {
   color: black;
 }
 
-footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-#social-links a {
-  text-decoration: none;
-}
-
-#social-links svg {
-  color: black;
-  transition: all 0.3s ease;
-}
-
-#social-links svg:hover,
-#social-links svg:focus {
-  color: #0a4bed;
-  transform: scale(1.08);
-}
-
 /* remove hover rule for sponsor images if hover is not supported on device */
 
 @media (hover: none) {
