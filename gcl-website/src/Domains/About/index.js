@@ -3,7 +3,7 @@ import Impact from './Impact';
 
 const About = () => {
   return (
-    <Container id="about-us">
+    <Container component="section" id="about-us">
       <Typography variant="h1">About Us</Typography>
 
       <Typography paragraph>

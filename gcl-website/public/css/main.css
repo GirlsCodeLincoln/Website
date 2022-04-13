@@ -1,6 +1,4 @@
 html {
-  font-size: 1em;
-  line-height: 1.5;
   height: 100%;
   box-sizing: border-box;
   scroll-padding-top: 60px; /* height of sticky header */
@@ -90,27 +88,6 @@ hr.hr {
 
 .bg-indigo {
   background-color: #2a29b4;
-}
-
-.impact-subtext {
-  color: black;
-}
-
-.impact-figure {
-  font-size: 42px;
-  margin-bottom: 0;
-}
-
-.impact-subtext {
-  font-size: 18px;
-}
-
-#get-involved {
-  background: linear-gradient(rgba(242, 175, 228, 0.7), rgba(10, 75, 237, 0.9)),
-    url('/assets/img/involvement-background.jpg');
-  background-position: center right;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #our-clubs {
