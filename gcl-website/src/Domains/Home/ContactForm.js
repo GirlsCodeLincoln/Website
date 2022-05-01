@@ -66,7 +66,7 @@ const ContactForm = () => {
           </Grid>
 
           <Grid item>
-            <div className="text-center mb-3" data-netlify-recaptcha="true" />
+            <div className="g-recaptcha" data-sitekey="6LdacrcfAAAAAKzbU1anCKR-6IdG61CxY6Z8D3mi"/>
           </Grid>
 
           <Grid item>

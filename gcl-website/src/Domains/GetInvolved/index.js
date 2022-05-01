@@ -29,20 +29,22 @@ const GetInvolved = () => {
           Get Involved as a:
         </Typography>
         <Stack
-          direction="row"
+          direction={{ xs: 'column', sm: 'row' }}
+          spacing={{ xs: 1, sm: 2, md: 4 }}
           justifyContent="center"
           alignItems="center"
-          spacing={2}
         >
-          <Card sx={{ maxWidth: 400 }}>
+          <Card sx={{ width: 300 }}>
             <CardMedia
               component="img"
-              height="194"
+              height="200"
               image="/assets/img/student-background.jpg"
               alt="Students with their completion certificates"
             />
             <CardContent>
-              <Typography variant="h5">Student</Typography>
+              <Typography gutterBottom variant="h5" sx={{ margin: 0 }}>
+                Student
+              </Typography>
             </CardContent>
             <CardActions>
               <Button variant="contained" disabled>
@@ -51,28 +53,23 @@ const GetInvolved = () => {
             </CardActions>
           </Card>
 
-          <Card sx={{ maxWidth: 400 }}>
+          <Card sx={{ width: 300 }}>
             <CardMedia
               component="img"
-              height="194"
+              height="200"
               image="/assets/img/volunteer-background.jpg"
               alt="Volunteers planning club logistics"
+              sx={{ objectPosition: 'top' }}
             />
             <CardContent>
-              <Typography variant="h5">Volunteer</Typography>
+              <Typography gutterBottom variant="h5" sx={{ margin: 0 }}>
+                Volunteer
+              </Typography>
             </CardContent>
             <CardActions>
               <Button
-                variant="outlined"
-                href="/assets/pdf/GCL-Volunteer-Information.pdf"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Information
-              </Button>
-              <Button
                 variant="contained"
-                href="https://www.surveymonkey.com/r/2JNS682"
+                href="https://forms.gle/ZyN8V5PpJdSbzb139"
                 rel="noopener noreferrer"
                 target="_blank"
                 color="secondary"
