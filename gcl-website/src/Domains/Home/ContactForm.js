@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-import { Button, Grid, TextField, Typography } from '@mui/material';
+import { Button, Container, Grid, TextField, Typography } from '@mui/material';
 
 const ContactForm = () => {
   return (
-    <section className="col-12 py-5">
+    <Container component="section" id="contact" maxWidth="md">
       <Typography variant="h2" textAlign="center">
         Contact
       </Typography>
@@ -12,7 +12,6 @@ const ContactForm = () => {
         Send us a message and we will get back to you soon!
       </Typography>
       <form
-        className="col-10 col-lg-6 mx-auto text-white"
         data-netlify="true"
         data-netlify-recaptcha="true"
         method="POST"
@@ -66,7 +65,10 @@ const ContactForm = () => {
           </Grid>
 
           <Grid item>
-            <div className="g-recaptcha" data-sitekey="6LdacrcfAAAAAKzbU1anCKR-6IdG61CxY6Z8D3mi"/>
+            <div
+              className="g-recaptcha"
+              data-sitekey="6LdacrcfAAAAAKzbU1anCKR-6IdG61CxY6Z8D3mi"
+            />
           </Grid>
 
           <Grid item>
@@ -81,7 +83,7 @@ const ContactForm = () => {
           </Grid>
         </Grid>
       </form>
-    </section>
+    </Container>
   );
 };
 

@@ -9,11 +9,9 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
-      <div className="container-fluid">
-        <Navbar />
-        <Home />
-        <Footer />
-      </div>
+      <Navbar />
+      <Home />
+      <Footer />
     </ThemeProvider>
   );
 };

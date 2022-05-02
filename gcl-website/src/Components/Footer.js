@@ -23,6 +23,7 @@ const Footer = () => {
         flexDirection: 'column',
         alignItems: 'center',
       }}
+      maxWidth="md"
     >
       <Typography
         variant="h4"

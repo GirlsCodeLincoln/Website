@@ -1,3 +1,4 @@
+import { Box } from '@mui/material';
 import About from '../About';
 import GetInvolved from '../GetInvolved';
 import ClubsOverview from '../JoinClubs/ClubsOverview';
@@ -9,7 +10,7 @@ import SponsorsAndPartners from './SponsorsAndPartners';
 
 const Home = () => {
   return (
-    <main className="row">
+    <Box component="main">
       <HeroHeader />
 
       <About />
@@ -22,7 +23,7 @@ const Home = () => {
       <SponsorsAndPartners />
 
       <ContactForm />
-    </main>
+    </Box>
   );
 };
 

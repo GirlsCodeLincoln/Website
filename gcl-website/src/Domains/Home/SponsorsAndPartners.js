@@ -1,144 +1,211 @@
-import { Button, Grid, TextField, Typography } from '@mui/material';
+import {
+  Box,
+  Button,
+  Container,
+  Divider,
+  Grid,
+  Typography,
+  useTheme,
+} from '@mui/material';
 
 const SponsorsAndPartners = () => {
+  const theme = useTheme();
+
   return (
-    <section className="col-12 py-5" id="sponsors-partners">
-      <h2 className="text-center mb-5 font-weight-bold">
+    <Container component="section" align="center">
+      <Typography variant="h2" align="center">
         A Huge Thank You to Our Sponsors and Partners
-      </h2>
+      </Typography>
 
-      <h3 className="text-center mb-4">Sponsors</h3>
-      <div className="col-10 d-flex flex-wrap justify-content-center mx-auto mb-5 align-items-center">
+      <Typography variant="h3" align="center">
+        Sponsors
+      </Typography>
+      <Grid
+        container
+        gap={5}
+        alignItems="center"
+        justifyContent="center"
+        marginBottom={theme.spacing(5)}
+      >
         {sponsors.map((sponsor) => (
-          <a
-            href={sponsor.href}
-            id={sponsor.id}
-            rel="noopener noreferrer"
-            target="_blank"
-            key={sponsor.id}
-          >
-            <img alt={sponsor.name} className="px-3 logo" src={sponsor.logo} />
-          </a>
-        ))}
-      </div>
+          <Grid item key={sponsor.id}>
+            <a
+              href={sponsor.href}
+              id={sponsor.id}
+              rel="noopener noreferrer"
+              target="_blank"
+              key={sponsor.id}
+            >
+              <Box
+                component="img"
+                alt={sponsor.name}
+                src={sponsor.logo}
+                width={theme.spacing(30)}
+                sx={{
+                  transition: 'transform 0.3s ease',
 
-      <h3 className="text-center mb-4">Partners</h3>
-      <div className="col-10 d-flex flex-wrap justify-content-center mx-auto align-items-center">
+                  // Hover effects
+                  '&:hover': {
+                    transform: 'scale(1.05)',
+                  },
+
+                  // On mobile devices, do not show hover effects
+                  '@media (hover: none)': {
+                    '&:hover': {
+                      transform: 'none',
+                    },
+                  },
+                }}
+              />
+            </a>
+          </Grid>
+        ))}
+      </Grid>
+
+      <Divider sx={{ marginBottom: theme.spacing(5) }} />
+
+      <Typography variant="h3" align="center">
+        Partners
+      </Typography>
+      <Grid
+        container
+        gap={5}
+        alignItems="center"
+        justifyContent="center"
+        marginBottom={theme.spacing(5)}
+      >
         {partners.map((partner) => (
-          <a
-            href={partner.href}
-            id={partner.id}
-            rel="noopener noreferrer"
-            target="_blank"
-            key={partner.id}
-          >
-            <img alt={partner.name} className="px-3 logo" src={partner.logo} />
-          </a>
+          <Grid item key={partner.id}>
+            <a
+              href={partner.href}
+              id={partner.id}
+              rel="noopener noreferrer"
+              target="_blank"
+              key={partner.id}
+            >
+              <Box
+                component="img"
+                alt={partner.name}
+                src={partner.logo}
+                width={theme.spacing(30)}
+                sx={{
+                  transition: 'transform 0.3s ease',
+
+                  // Hover effects
+                  '&:hover': {
+                    transform: 'scale(1.05)',
+                  },
+
+                  // On mobile devices, do not show hover effects
+                  '@media (hover: none)': {
+                    '&:hover': {
+                      transform: 'none',
+                    },
+                  },
+                }}
+              />
+            </a>
+          </Grid>
         ))}
-      </div>
+      </Grid>
 
-      <div className="col-10 mx-auto">
-        <hr className="hr" />
-      </div>
+      <Divider sx={{ marginBottom: theme.spacing(5) }} />
 
-      <div className="mx-auto mt-5 d-flex justify-content-center align-items-center">
-        <Button
-          variant="contained"
-          className="btn info-btn text-light"
-          href="assets/pdf/GCL-Donation-Info.pdf"
-          id="donatebutton"
-          rel="noopener noreferrer"
-          role="button"
-          target="_blank"
-        >
-          Want to become a Sponsor or Partner?
-        </Button>
-      </div>
-    </section>
+      <Button
+        variant="contained"
+        href="assets/pdf/GCL-Donation-Info.pdf"
+        id="donatebutton"
+        rel="noopener noreferrer"
+        role="button"
+        target="_blank"
+      >
+        Want to become a Sponsor or Partner?
+      </Button>
+    </Container>
   );
 };
 
 const sponsors = [
   {
-    id: "mentorsfound",
-    name: "Mentors Found",
-    href: "https://mentorsfound.com",
-    logo: "/assets/img/sponsors/mentors.png",
+    id: 'mentorsfound',
+    name: 'Mentors Found',
+    href: 'https://mentorsfound.com',
+    logo: '/assets/img/sponsors/mentors.png',
   },
   {
-    id: "hudl",
-    name: "Hudl",
-    href: "https://www.hudl.com",
-    logo: "/assets/img/sponsors/hudl.png",
+    id: 'hudl',
+    name: 'Hudl',
+    href: 'https://www.hudl.com',
+    logo: '/assets/img/sponsors/hudl.png',
   },
   {
-    id: "assurity",
-    name: "Assurity",
-    href: "https://www.assurity.com/",
-    logo: "/assets/img/sponsors/assurity.png",
+    id: 'assurity',
+    name: 'Assurity',
+    href: 'https://www.assurity.com/',
+    logo: '/assets/img/sponsors/assurity.png',
   },
   {
-    id: "ameritas",
-    name: "Ameritas",
-    href: "https://www.ameritas.com/",
-    logo: "/assets/img/sponsors/ameritas.svg",
+    id: 'ameritas',
+    name: 'Ameritas',
+    href: 'https://www.ameritas.com/',
+    logo: '/assets/img/sponsors/ameritas.svg',
   },
   {
-    id: "dpl",
+    id: 'dpl',
     name: "Don't Panic Labs",
-    href: "https://dontpaniclabs.com/",
-    logo: "/assets/img/sponsors/dpl.png",
+    href: 'https://dontpaniclabs.com/',
+    logo: '/assets/img/sponsors/dpl.png',
   },
   {
-    id: "ngtc",
-    name: "Nebraska Governance and Technology Center",
-    href: "https://ngtc.unl.edu/",
-    logo: "/assets/img/sponsors/NGTC.png",
+    id: 'ngtc',
+    name: 'Nebraska Governance and Technology Center',
+    href: 'https://ngtc.unl.edu/',
+    logo: '/assets/img/sponsors/NGTC.png',
   },
 ];
 
 const partners = [
   {
-    id: "muchachos",
-    name: "Muchachos",
-    href: "https://www.yomuchacho.com",
-    logo: "/assets/img/partners/muchachos.webp",
+    id: 'muchachos',
+    name: 'Muchachos',
+    href: 'https://www.yomuchacho.com',
+    logo: '/assets/img/partners/muchachos.webp',
   },
   {
-    id: "launchleadership",
-    name: "Launch Leadership",
-    href: "https://www.launchleadership.org",
-    logo: "/assets/img/partners/launch.png",
+    id: 'launchleadership',
+    name: 'Launch Leadership',
+    href: 'https://www.launchleadership.org',
+    logo: '/assets/img/partners/launch.png',
   },
   {
-    id: "fusecoworking",
-    name: "FUSE Coworking",
-    href: "https://www.fusecoworking.com",
-    logo: "/assets/img/partners/fuse.png",
+    id: 'fusecoworking',
+    name: 'FUSE Coworking',
+    href: 'https://www.fusecoworking.com',
+    logo: '/assets/img/partners/fuse.png',
   },
   {
-    id: "makeshiftlincoln",
-    name: "Makeshift Lincoln",
-    href: "http://makeshiftlincoln.org",
-    logo: "/assets/img/partners/makeshift.png",
+    id: 'makeshiftlincoln',
+    name: 'Makeshift Lincoln',
+    href: 'http://makeshiftlincoln.org',
+    logo: '/assets/img/partners/makeshift.png',
   },
   {
-    id: "selfimagedefined",
-    name: "Self Image Defined",
-    href: "https://www.selfimagedefined.org",
-    logo: "/assets/img/partners/selfid.png",
+    id: 'selfimagedefined',
+    name: 'Self Image Defined',
+    href: 'https://www.selfimagedefined.org',
+    logo: '/assets/img/partners/selfid.png',
   },
   {
-    id: "leturaidigima",
-    name: "Letura Idigima",
-    href: "https://leturaidigima.com",
-    logo: "/assets/img/partners/letura.png",
+    id: 'leturaidigima',
+    name: 'Letura Idigima',
+    href: 'https://leturaidigima.com',
+    logo: '/assets/img/partners/letura.png',
   },
   {
-    id: "carlosvelascodesign",
-    name: "Carlos Velasco Design",
-    href: "https://www.carlosvelascodesign.com",
-    logo: "/assets/img/partners/carlos.png",
+    id: 'carlosvelascodesign',
+    name: 'Carlos Velasco Design',
+    href: 'https://www.carlosvelascodesign.com',
+    logo: '/assets/img/partners/carlos.png',
   },
 ];
 
