@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import About from '../About';
 import GetInvolved from '../GetInvolved';
-import ClubsOverview from '../JoinClubs/ClubsOverview';
+import JoinClubs from '../JoinClubs';
 import ContactForm from './ContactForm';
 import HeroHeader from './HeroHeader';
 import ImageGallery from './ImageGallery';
@@ -18,7 +18,7 @@ const Home = () => {
       <Podcast />
 
       <ImageGallery />
-      <ClubsOverview />
+      <JoinClubs />
 
       <SponsorsAndPartners />
 

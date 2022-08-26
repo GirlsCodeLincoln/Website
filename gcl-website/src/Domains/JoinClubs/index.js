@@ -1,5 +1,7 @@
+import ClubsOverview from './ClubsOverview';
+
 const JoinClubs = () => {
-  return <></>;
+  return <ClubsOverview />;
 };
 
 export default JoinClubs;
