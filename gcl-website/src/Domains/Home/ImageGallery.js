@@ -2,6 +2,11 @@ import { faMinus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Box, IconButton, Stack, useTheme } from '@mui/material';
 import { useEffect, useState } from 'react';
+import girlsCode17 from '../../Assets/gallery/girlscode-17.jpg';
+import girlsCode1 from '../../Assets/gallery/girlscode-1.jpg';
+import girlsCode4 from '../../Assets/gallery/girlscode-4.jpg';
+import girlsCode18 from '../../Assets/gallery/girlscode-18.jpg';
+import girlsCode19 from '../../Assets/gallery/girlscode-19.jpg';
 
 const ImageGallery = () => {
   const theme = useTheme();
@@ -9,23 +14,23 @@ const ImageGallery = () => {
   // Images to display in the gallery
   const images = [
     {
-      src: '/assets/img/gallery/girlscode-17.jpg',
+      src: girlsCode17,
       alt: 'Girl Smiling While Coding',
     },
     {
-      src: '/assets/img/gallery/girlscode-1.jpg',
+      src: girlsCode1,
       alt: 'Girls With Yarn During a Leadership Activity',
     },
     {
-      src: '/assets/img/gallery/girlscode-4.jpg',
+      src: girlsCode4,
       alt: 'Girls High Fiving',
     },
     {
-      src: '/assets/img/gallery/girlscode-18.jpg',
+      src: girlsCode18,
       alt: 'Girl Focusing While Coding',
     },
     {
-      src: '/assets/img/gallery/girlscode-19.jpg',
+      src: girlsCode19,
       alt: 'Volunteer and Two Girls Laughing While Coding',
     },
   ];

@@ -4,9 +4,107 @@ import {
   Container,
   Divider,
   Grid,
+  Link,
   Typography,
   useTheme,
 } from '@mui/material';
+import mentorsFoundImg from '../../Assets/sponsors/mentors.png';
+import hudlImg from '../../Assets/sponsors/hudl.png';
+import assurityImg from '../../Assets/sponsors/assurity.png';
+import ameritasImg from '../../Assets/sponsors/ameritas.svg';
+import dplImg from '../../Assets/sponsors/dpl.png';
+import ngtcImg from '../../Assets/sponsors/NGTC.png';
+import carlosImg from '../../Assets/partners/carlos.png';
+import fuseImg from '../../Assets/partners/fuse.png';
+import launchImg from '../../Assets/partners/launch.png';
+import leturaImg from '../../Assets/partners/letura.png';
+import makeshiftImg from '../../Assets/partners/makeshift.png';
+import muchachosImg from '../../Assets/partners/muchachos.webp';
+import selfidImg from '../../Assets/partners/selfid.png';
+
+const sponsors = [
+  {
+    id: 'mentorsfound',
+    name: 'Mentors Found',
+    href: 'https://mentorsfound.com',
+    logo: mentorsFoundImg,
+  },
+  {
+    id: 'hudl',
+    name: 'Hudl',
+    href: 'https://www.hudl.com',
+    logo: hudlImg,
+  },
+  {
+    id: 'assurity',
+    name: 'Assurity',
+    href: 'https://www.assurity.com/',
+    logo: assurityImg,
+  },
+  {
+    id: 'ameritas',
+    name: 'Ameritas',
+    href: 'https://www.ameritas.com/',
+    logo: ameritasImg,
+  },
+  {
+    id: 'dpl',
+    name: "Don't Panic Labs",
+    href: 'https://dontpaniclabs.com/',
+    logo: dplImg,
+  },
+  {
+    id: 'ngtc',
+    name: 'Nebraska Governance and Technology Center',
+    href: 'https://ngtc.unl.edu/',
+    logo: ngtcImg,
+  },
+];
+
+const partners = [
+  {
+    id: 'muchachos',
+    name: 'Muchachos',
+    href: 'https://www.yomuchacho.com',
+    logo: muchachosImg,
+  },
+  {
+    id: 'launchleadership',
+    name: 'Launch Leadership',
+    href: 'https://www.launchleadership.org',
+    logo: launchImg,
+  },
+  {
+    id: 'fusecoworking',
+    name: 'FUSE Coworking',
+    href: 'https://www.fusecoworking.com',
+    logo: fuseImg,
+  },
+  {
+    id: 'makeshiftlincoln',
+    name: 'Makeshift Lincoln',
+    href: 'http://makeshiftlincoln.org',
+    logo: makeshiftImg,
+  },
+  {
+    id: 'selfimagedefined',
+    name: 'Self Image Defined',
+    href: 'https://www.selfimagedefined.org',
+    logo: selfidImg,
+  },
+  {
+    id: 'leturaidigima',
+    name: 'Letura Idigima',
+    href: 'https://leturaidigima.com',
+    logo: leturaImg,
+  },
+  {
+    id: 'carlosvelascodesign',
+    name: 'Carlos Velasco Design',
+    href: 'https://www.carlosvelascodesign.com',
+    logo: carlosImg,
+  },
+];
 
 const SponsorsAndPartners = () => {
   const theme = useTheme();
@@ -29,7 +127,7 @@ const SponsorsAndPartners = () => {
       >
         {sponsors.map((sponsor) => (
           <Grid item key={sponsor.id}>
-            <a
+            <Link
               href={sponsor.href}
               id={sponsor.id}
               rel="noopener noreferrer"
@@ -57,7 +155,7 @@ const SponsorsAndPartners = () => {
                   },
                 }}
               />
-            </a>
+            </Link>
           </Grid>
         ))}
       </Grid>
@@ -76,7 +174,7 @@ const SponsorsAndPartners = () => {
       >
         {partners.map((partner) => (
           <Grid item key={partner.id}>
-            <a
+            <Link
               href={partner.href}
               id={partner.id}
               rel="noopener noreferrer"
@@ -104,7 +202,7 @@ const SponsorsAndPartners = () => {
                   },
                 }}
               />
-            </a>
+            </Link>
           </Grid>
         ))}
       </Grid>
@@ -124,89 +222,5 @@ const SponsorsAndPartners = () => {
     </Container>
   );
 };
-
-const sponsors = [
-  {
-    id: 'mentorsfound',
-    name: 'Mentors Found',
-    href: 'https://mentorsfound.com',
-    logo: '/assets/img/sponsors/mentors.png',
-  },
-  {
-    id: 'hudl',
-    name: 'Hudl',
-    href: 'https://www.hudl.com',
-    logo: '/assets/img/sponsors/hudl.png',
-  },
-  {
-    id: 'assurity',
-    name: 'Assurity',
-    href: 'https://www.assurity.com/',
-    logo: '/assets/img/sponsors/assurity.png',
-  },
-  {
-    id: 'ameritas',
-    name: 'Ameritas',
-    href: 'https://www.ameritas.com/',
-    logo: '/assets/img/sponsors/ameritas.svg',
-  },
-  {
-    id: 'dpl',
-    name: "Don't Panic Labs",
-    href: 'https://dontpaniclabs.com/',
-    logo: '/assets/img/sponsors/dpl.png',
-  },
-  {
-    id: 'ngtc',
-    name: 'Nebraska Governance and Technology Center',
-    href: 'https://ngtc.unl.edu/',
-    logo: '/assets/img/sponsors/NGTC.png',
-  },
-];
-
-const partners = [
-  {
-    id: 'muchachos',
-    name: 'Muchachos',
-    href: 'https://www.yomuchacho.com',
-    logo: '/assets/img/partners/muchachos.webp',
-  },
-  {
-    id: 'launchleadership',
-    name: 'Launch Leadership',
-    href: 'https://www.launchleadership.org',
-    logo: '/assets/img/partners/launch.png',
-  },
-  {
-    id: 'fusecoworking',
-    name: 'FUSE Coworking',
-    href: 'https://www.fusecoworking.com',
-    logo: '/assets/img/partners/fuse.png',
-  },
-  {
-    id: 'makeshiftlincoln',
-    name: 'Makeshift Lincoln',
-    href: 'http://makeshiftlincoln.org',
-    logo: '/assets/img/partners/makeshift.png',
-  },
-  {
-    id: 'selfimagedefined',
-    name: 'Self Image Defined',
-    href: 'https://www.selfimagedefined.org',
-    logo: '/assets/img/partners/selfid.png',
-  },
-  {
-    id: 'leturaidigima',
-    name: 'Letura Idigima',
-    href: 'https://leturaidigima.com',
-    logo: '/assets/img/partners/letura.png',
-  },
-  {
-    id: 'carlosvelascodesign',
-    name: 'Carlos Velasco Design',
-    href: 'https://www.carlosvelascodesign.com',
-    logo: '/assets/img/partners/carlos.png',
-  },
-];
 
 export default SponsorsAndPartners;

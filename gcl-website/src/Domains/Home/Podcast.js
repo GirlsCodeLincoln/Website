@@ -1,17 +1,17 @@
-import { Container, Typography } from '@mui/material';
+import { Container, Link, Typography } from '@mui/material';
 
 const Podcast = () => {
   return (
     <Container component="section" id="podcast" maxWidth="md" align="center">
       <Typography variant="h2">
         Check out our{' '}
-        <a
+        <Link
           href="https://www.buzzsprout.com/1882218"
           target="_blank"
           rel="noopener noreferrer"
         >
           Podcast
-        </a>
+        </Link>
         !
       </Typography>
 
