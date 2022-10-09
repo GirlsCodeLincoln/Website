@@ -124,7 +124,7 @@ const Navbar = () => {
         </Box>
       </AppBar>
 
-      <Box sx={theme.mixins.toolbar} />
+      <Box sx={{ height: theme.spacing(6) }} />
     </>
   );
 };
