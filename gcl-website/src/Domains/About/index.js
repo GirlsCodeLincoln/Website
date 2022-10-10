@@ -14,7 +14,7 @@ const About = () => {
       name: 'Ciara Baumert',
       title: 'Director of Volunteers',
       image: sampleImg,
-      email: 'volunteers@girlscodelincoln.org'
+      email: 'volunteers@girlscodelincoln.org',
     },
     {
       name: 'Vivian Jacobitz',
@@ -59,8 +59,8 @@ const About = () => {
         </Typography>
 
         <Typography paragraph>
-          We host multiweek technology clubs for 4th through 9th grade girls. All clubs
-          are completely free and 100% volunteer-run.
+          We host multiweek technology clubs for 4th through 9th grade girls.
+          All clubs are completely free and 100% volunteer-run.
         </Typography>
 
         <Typography paragraph>
@@ -69,9 +69,16 @@ const About = () => {
         </Typography>
 
         <Typography variant="h2">Leadership Team</Typography>
-        <Grid container gap={2}>
+        <Grid container spacing={4}>
           {leadershipTeamMembers.map((member) => (
-            <Grid item xs={12} md={6} key={`${member.name}, ${member.title}`}>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={4}
+              lg={3}
+              key={`${member.name}, ${member.title}`}
+            >
               <PersonCard
                 name={member.name}
                 title={member.title}
@@ -83,14 +90,17 @@ const About = () => {
         </Grid>
 
         <Typography variant="h2">Board</Typography>
-        <Grid container gap={2}>
+        <Grid container spacing={4}>
           {boardMembers.map((member) => (
-            <Grid item xs={12} md={6} key={`${member.name}, ${member.title}`}>
-              <PersonCard
-                name={member.name}
-                title={member.title}
-                image={member.image}
-              />
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={4}
+              lg={3}
+              key={`${member.name}, ${member.title}`}
+            >
+              <PersonCard name={member.name} title={member.title} />
             </Grid>
           ))}
         </Grid>
