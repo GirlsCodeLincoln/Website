@@ -18,7 +18,7 @@ const Home = () => {
         </Typography>
 
         <Typography paragraph>
-          We host multiweek technology clubs for 4th-9th grade girls. All clubs
+          We host multiweek technology clubs for 4th through 9th grade girls. All clubs
           are completely free and 100% volunteer-run.
         </Typography>
 

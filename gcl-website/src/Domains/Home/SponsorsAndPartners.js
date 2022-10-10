@@ -110,116 +110,118 @@ const SponsorsAndPartners = () => {
   const theme = useTheme();
 
   return (
-    <Container component="section" align="center">
-      <Typography variant="h2" align="center">
-        A Huge Thank You to Our Sponsors and Partners
-      </Typography>
+    <Box sx={{ backgroundColor: theme.palette.secondary.light }}>
+      <Container component="section" align="center">
+        <Typography variant="h2" align="center">
+          A Huge Thank You to Our Sponsors and Partners
+        </Typography>
 
-      <Typography variant="h3" align="center">
-        Sponsors
-      </Typography>
-      <Grid
-        container
-        gap={5}
-        alignItems="center"
-        justifyContent="center"
-        marginBottom={theme.spacing(5)}
-      >
-        {sponsors.map((sponsor) => (
-          <Grid item key={sponsor.id}>
-            <Link
-              href={sponsor.href}
-              id={sponsor.id}
-              rel="noopener noreferrer"
-              target="_blank"
-              key={sponsor.id}
-            >
-              <Box
-                component="img"
-                alt={sponsor.name}
-                src={sponsor.logo}
-                width={theme.spacing(30)}
-                sx={{
-                  transition: 'transform 0.3s ease',
+        <Typography variant="h3" align="center">
+          Sponsors
+        </Typography>
+        <Grid
+          container
+          gap={3}
+          alignItems="center"
+          justifyContent="center"
+          marginBottom={theme.spacing(5)}
+        >
+          {sponsors.map((sponsor) => (
+            <Grid item key={sponsor.id}>
+              <Link
+                href={sponsor.href}
+                id={sponsor.id}
+                rel="noopener noreferrer"
+                target="_blank"
+                key={sponsor.id}
+              >
+                <Box
+                  component="img"
+                  alt={sponsor.name}
+                  src={sponsor.logo}
+                  width={theme.spacing(20)}
+                  sx={{
+                    transition: 'transform 0.3s ease',
 
-                  // Hover effects
-                  '&:hover': {
-                    transform: 'scale(1.05)',
-                  },
-
-                  // On mobile devices, do not show hover effects
-                  '@media (hover: none)': {
+                    // Hover effects
                     '&:hover': {
-                      transform: 'none',
+                      transform: 'scale(1.05)',
                     },
-                  },
-                }}
-              />
-            </Link>
-          </Grid>
-        ))}
-      </Grid>
 
-      <Divider sx={{ marginBottom: theme.spacing(5) }} />
+                    // On mobile devices, do not show hover effects
+                    '@media (hover: none)': {
+                      '&:hover': {
+                        transform: 'none',
+                      },
+                    },
+                  }}
+                />
+              </Link>
+            </Grid>
+          ))}
+        </Grid>
 
-      <Typography variant="h3" align="center">
-        Partners
-      </Typography>
-      <Grid
-        container
-        gap={5}
-        alignItems="center"
-        justifyContent="center"
-        marginBottom={theme.spacing(5)}
-      >
-        {partners.map((partner) => (
-          <Grid item key={partner.id}>
-            <Link
-              href={partner.href}
-              id={partner.id}
-              rel="noopener noreferrer"
-              target="_blank"
-              key={partner.id}
-            >
-              <Box
-                component="img"
-                alt={partner.name}
-                src={partner.logo}
-                width={theme.spacing(30)}
-                sx={{
-                  transition: 'transform 0.3s ease',
+        <Divider sx={{ marginBottom: theme.spacing(5) }} />
 
-                  // Hover effects
-                  '&:hover': {
-                    transform: 'scale(1.05)',
-                  },
+        <Typography variant="h3" align="center">
+          Partners
+        </Typography>
+        <Grid
+          container
+          gap={3}
+          alignItems="center"
+          justifyContent="center"
+          marginBottom={theme.spacing(5)}
+        >
+          {partners.map((partner) => (
+            <Grid item key={partner.id}>
+              <Link
+                href={partner.href}
+                id={partner.id}
+                rel="noopener noreferrer"
+                target="_blank"
+                key={partner.id}
+              >
+                <Box
+                  component="img"
+                  alt={partner.name}
+                  src={partner.logo}
+                  width={theme.spacing(20)}
+                  sx={{
+                    transition: 'transform 0.3s ease',
 
-                  // On mobile devices, do not show hover effects
-                  '@media (hover: none)': {
+                    // Hover effects
                     '&:hover': {
-                      transform: 'none',
+                      transform: 'scale(1.05)',
                     },
-                  },
-                }}
-              />
-            </Link>
-          </Grid>
-        ))}
-      </Grid>
 
-      <Divider sx={{ marginBottom: theme.spacing(5) }} />
+                    // On mobile devices, do not show hover effects
+                    '@media (hover: none)': {
+                      '&:hover': {
+                        transform: 'none',
+                      },
+                    },
+                  }}
+                />
+              </Link>
+            </Grid>
+          ))}
+        </Grid>
 
-      <Button
-        variant="contained"
-        href="assets/pdf/GCL-Donation-Info.pdf"
-        id="donatebutton"
-        rel="noopener noreferrer"
-        role="button"
-        target="_blank"
-      >
-        Want to become a Sponsor or Partner?
-      </Button>
-    </Container>
+        <Divider sx={{ marginBottom: theme.spacing(5) }} />
+
+        <Button
+          variant="contained"
+          href="assets/pdf/GCL-Donation-Info.pdf"
+          id="donatebutton"
+          rel="noopener noreferrer"
+          role="button"
+          target="_blank"
+        >
+          Want to become a Sponsor or Partner?
+        </Button>
+      </Container>
+    </Box>
   );
 };
 

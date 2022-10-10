@@ -37,7 +37,7 @@ const Navbar = () => {
   const [menuAnchorElement, setMenuAnchorElement] = useState(null);
 
   // Breakpoint for small vs. large screens
-  const isLargeScreen = useMediaQuery((theme) => theme.breakpoints.up('md'));
+  const isLargeScreen = useMediaQuery((theme) => theme.breakpoints.up('lg'));
 
   return (
     <>

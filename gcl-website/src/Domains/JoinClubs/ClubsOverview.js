@@ -1,5 +1,4 @@
 import {
-  AppBar,
   Box,
   Button,
   Card,
@@ -7,7 +6,6 @@ import {
   CardMedia,
   Container,
   Typography,
-  Toolbar,
   useTheme,
   Link,
 } from '@mui/material';
@@ -28,12 +26,15 @@ const ClubsOverview = () => {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <AppBar position="static" color="primary" elevation={0}>
-        <Toolbar variant="dense" sx={{ justifyContent: 'center' }}>
-          Applications for our fall clubs are currently closed. Applications
-          will open again in the spring.
-        </Toolbar>
-      </AppBar>
+      <Box
+        padding={2}
+        backgroundColor={theme.palette.secondary.dark}
+        color={theme.palette.getContrastText(theme.palette.secondary.dark)}
+        textAlign="center"
+      >
+        Applications for our fall clubs are currently closed. Applications will
+        open again in the spring.
+      </Box>
       <Container sx={{ paddingY: theme.spacing(8), textAlign: 'center' }}>
         <Typography variant="h2" sx={{ marginTop: 0 }}>
           Our Clubs
