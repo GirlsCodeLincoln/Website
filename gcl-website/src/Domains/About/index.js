@@ -51,7 +51,7 @@ const About = () => {
         </Typography>
       </Header>
 
-      <Container component="section">
+      <Container>
         <Typography paragraph>
           Girls Code Lincoln is a 501(c)(3) nonprofit organization. We strive to
           ignite passion for technology and leadership in young girls with the
