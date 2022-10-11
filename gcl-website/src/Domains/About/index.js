@@ -100,7 +100,15 @@ const About = () => {
               lg={3}
               key={`${member.name}, ${member.title}`}
             >
-              <PersonCard name={member.name} title={member.title} />
+              <Typography
+                variant="h4"
+                variantMapping={{ h4: 'h3' }}
+                sx={{ marginY: 0 }}
+              >
+                {member.name}
+              </Typography>
+
+              <Typography color="text.secondary">{member.title}</Typography>
             </Grid>
           ))}
         </Grid>
