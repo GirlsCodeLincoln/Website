@@ -1,48 +1,9 @@
-import { Box, Container, Grid, Typography } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import Header from '../../Components/Header';
-import PersonCard from './PersonCard';
-import sampleImg from '../../Assets/clubs-background.jpg';
+import Board from './Board';
+import LeadershipTeam from './LeadershipTeam';
 
 const About = () => {
-  const leadershipTeamMembers = [
-    {
-      name: 'Val Stehlik',
-      title: 'Director of Clubs',
-      image: sampleImg,
-    },
-    {
-      name: 'Ciara Baumert',
-      title: 'Director of Volunteers',
-      image: sampleImg,
-      email: 'volunteers@girlscodelincoln.org',
-    },
-    {
-      name: 'Vivian Jacobitz',
-      title: 'Director of Curriculum',
-      image: sampleImg,
-    },
-    {
-      name: 'Leah Olson',
-      title: 'Website Chair',
-      image: sampleImg,
-    },
-  ];
-
-  const boardMembers = [
-    { name: 'Elsbeth Magilton', title: 'Board President' },
-    { name: 'Abby Rogers' },
-    { name: 'Angela Garbacz' },
-    { name: 'Bonita Sharif' },
-    { name: 'Danielle Miller' },
-    { name: 'Jaxon McCue' },
-    { name: 'Jenna Vitosh' },
-    { name: 'Lana Zumbrunn' },
-    { name: 'Maura Penas' },
-    { name: 'Ron Gallagher' },
-    { name: 'Ryan Olsen' },
-    { name: 'Ryan Wolff' },
-  ];
-
   return (
     <Box component="section">
       <Header>
@@ -68,50 +29,9 @@ const About = () => {
           to teach technology, leadership, and life skills.
         </Typography>
 
-        <Typography variant="h2">Leadership Team</Typography>
-        <Grid container spacing={4}>
-          {leadershipTeamMembers.map((member) => (
-            <Grid
-              item
-              xs={12}
-              sm={6}
-              md={4}
-              lg={3}
-              key={`${member.name}, ${member.title}`}
-            >
-              <PersonCard
-                name={member.name}
-                title={member.title}
-                image={member.image}
-                email={member.email}
-              />
-            </Grid>
-          ))}
-        </Grid>
+        <LeadershipTeam />
 
-        <Typography variant="h2">Board</Typography>
-        <Grid container spacing={4}>
-          {boardMembers.map((member) => (
-            <Grid
-              item
-              xs={12}
-              sm={6}
-              md={4}
-              lg={3}
-              key={`${member.name}, ${member.title}`}
-            >
-              <Typography
-                variant="h4"
-                variantMapping={{ h4: 'h3' }}
-                sx={{ marginY: 0 }}
-              >
-                {member.name}
-              </Typography>
-
-              <Typography color="text.secondary">{member.title}</Typography>
-            </Grid>
-          ))}
-        </Grid>
+        <Board />
       </Container>
     </Box>
   );
