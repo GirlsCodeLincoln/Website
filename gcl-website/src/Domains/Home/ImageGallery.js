@@ -35,6 +35,7 @@ const ImageGallery = () => {
     },
   ];
 
+  // Set which image the gallery is currently displaying
   const [step, setStep] = useState(0);
   const maxSteps = images.length;
 
@@ -49,7 +50,6 @@ const ImageGallery = () => {
 
   return (
     <Box
-      component="section"
       width="100%"
       height="80vh"
       display="flex"
@@ -57,21 +57,33 @@ const ImageGallery = () => {
       alignItems="center"
       position="relative"
     >
-      {images.map(
-        (image, index) =>
-          index === step && (
-            <Box
-              key={image.src}
-              component="img"
-              src={image.src}
-              alt={image.alt}
-              sx={{ objectFit: 'cover' }}
-              width="100%"
-              height="100%"
-              zIndex={0}
-            />
-          )
-      )}
+      {images.map((image, index) => (
+        <Box
+          key={image.src}
+          component="img"
+          src={image.src}
+          alt={image.alt}
+          sx={{
+            objectFit: 'cover',
+
+            // If it is this image's turn to be shown, set opacity to 100% and make visible
+            opacity: index === step ? 1 : 0,
+            visibility: index === step ? 'visible' : 'hidden',
+
+            /**
+             * When the image is appearing, make it visible immediately and then fade in;
+             * when the image is disappearing, fade out before removing visibility
+             */
+            transition: `opacity 0.5s linear, visibility 0s linear ${
+              index === step ? 0 : 0.5
+            }s`,
+          }}
+          width="100%"
+          height="100%"
+          position="absolute"
+          zIndex={0}
+        />
+      ))}
 
       <Stack direction="row" position="absolute" bottom={theme.spacing(1)}>
         {images.map((image, index) => (
@@ -79,11 +91,11 @@ const ImageGallery = () => {
             key={image.src}
             disableRipple
             onClick={() => setStep(index)}
-            aria-label={`Show the image ${image.alt}`}
+            aria-label={`Show image of ${image.alt}`}
             sx={{
               color: theme.palette.grey[100],
               opacity: step === index ? 1 : 0.5,
-              transition: 'opacity 0.25s',
+              transition: 'opacity 0.5s',
             }}
           >
             <FontAwesomeIcon icon={faMinus} />
