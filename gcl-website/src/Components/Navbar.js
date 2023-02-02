@@ -19,6 +19,7 @@ const Navbar = () => {
   const location = useLocation();
 
   const tabs = [
+    { label: 'Home', href: '/' },
     { label: 'About Us', href: '/about' },
     { label: 'Join Clubs', href: '/join-clubs' },
     { label: 'Get Involved', href: '/get-involved' },
@@ -54,7 +55,7 @@ const Navbar = () => {
         <Link
           to="/"
           style={{ height: theme.spacing(4) }}
-          onClick={() => setValue(false)}
+          onClick={() => setValue(0)}
         >
           <Box
             component="img"

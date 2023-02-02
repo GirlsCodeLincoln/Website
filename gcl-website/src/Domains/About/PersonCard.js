@@ -2,44 +2,43 @@ import {
   Card,
   CardContent,
   CardMedia,
-  Grid,
-  Link,
+  IconButton,
   Typography,
-  useTheme,
 } from '@mui/material';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const PersonCard = (props) => {
-  const theme = useTheme();
-
   return (
-    <Card>
-      <Grid container gap={1}>
-        <Grid item>
-          <CardMedia
-            component="img"
-            image={props.image}
-            alt={props.name}
-            sx={{
-              height: theme.spacing(20),
-              width: theme.spacing(20),
-            }}
-          />
-        </Grid>
+    <Card
+      variant="outlined"
+      align="center"
+      sx={{ height: '100%', borderRight: 'red' }}
+    >
+      {props.image && (
+        <CardMedia component="img" image={props.image} alt={props.name} />
+      )}
 
-        <Grid item>
-          <CardContent>
-            <Typography variant="h3">{props.name}</Typography>
-            <Typography variant="subtitle1" color="text.secondary">
-              {props.title}
-            </Typography>
-            {props.email && (
-              <Typography>
-                <Link href={`mailto:${props.email}`}>{props.email}</Link>
-              </Typography>
-            )}
-          </CardContent>
-        </Grid>
-      </Grid>
+      <CardContent>
+        <Typography
+          variant="h4"
+          variantMapping={{ h4: 'h3' }}
+          sx={{ marginBottom: 0.5, marginTop: 1 }}
+        >
+          {props.name}
+        </Typography>
+
+        <Typography>{props.title}</Typography>
+
+        {props.email && (
+          <IconButton
+            href={`mailto:${props.email}`}
+            aria-label={`Email ${props.name}`}
+          >
+            <FontAwesomeIcon icon={faEnvelope} size="xs" />
+          </IconButton>
+        )}
+      </CardContent>
     </Card>
   );
 };
