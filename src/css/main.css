@@ -225,6 +225,10 @@ ul.timeline > li.previous-club {
     background: linear-gradient(45deg, #7662AD 0%, #2A29B4 100%);
 }
 
+#board-members {
+    background: linear-gradient(45deg, #eeb9eb 0%, #eeb9eb 100%);
+}
+
 .g-recaptcha {
     display: inline-block;
 }
